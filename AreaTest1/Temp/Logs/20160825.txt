@@ -1,0 +1,44 @@
+http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21109015685513251301_1472112196103&_search=false&nd=1472112196338&rows=10&page=1&sidx=Id&sord=desc&_=1472112196104
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/25 16:03:16 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21109015685513251301_1472112196103&_search=false&nd=1472112196338&rows=10&page=1&sidx=Id&sord=desc&_=1472112196104
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():字符串 '' 后的引号不完整。
+“”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where [UserName]='like '%%'  ExeScalar():字符串 '' 后的引号不完整。
+“”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110643831170894251_1472112200050&_search=false&nd=1472112200256&rows=10&page=1&sidx=Id&sord=desc&_=1472112200051
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/25 16:03:20 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110643831170894251_1472112200050&_search=false&nd=1472112200256&rows=10&page=1&sidx=Id&sord=desc&_=1472112200051
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():字符串 '' 后的引号不完整。
+“”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where [UserName]='like '%%'  ExeScalar():字符串 '' 后的引号不完整。
+“”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110041723405820779824_1472112206046&_search=false&nd=1472112206285&rows=10&page=1&sidx=Id&sord=desc&_=1472112206047
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/25 16:03:26 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110041723405820779824_1472112206046&_search=false&nd=1472112206285&rows=10&page=1&sidx=Id&sord=desc&_=1472112206047
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():字符串 '' 后的引号不完整。
+“”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where [UserName]='like '%%'  ExeScalar():字符串 '' 后的引号不完整。
+“”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108654083427613561_1472112254078&_search=false&nd=1472112254297&rows=10&page=1&sidx=Id&sord=desc&_=1472112254079
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/25 16:04:14 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108654083427613561_1472112254078&_search=false&nd=1472112254297&rows=10&page=1&sidx=Id&sord=desc&_=1472112254079
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'like' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  like '%%'  ExeScalar():关键字 'like' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107472739129504923_1472132122830&_search=true&nd=1472134475618&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22qwer%22%7D%2C%7B%22field%22%3A%22Username%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22werwer%22%7D%2C%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22saf%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22aseeee%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22dsf%22%7D%5D%7D&_=1472132122844
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/25 22:14:38 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107472739129504923_1472132122830&_search=true&nd=1472134475618&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22qwer%22%7D%2C%7B%22field%22%3A%22Username%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22werwer%22%7D%2C%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22saf%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22aseeee%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22dsf%22%7D%5D%7D&_=1472132122844
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():字符串 'AND ID  AND Username  AND Userpassword  AND Realname  AND Popularizecode  AND Registertime' 后的引号不完整。
+“AND ID  AND Username  AND Userpassword  AND Realname  AND Popularizecode  AND Registertime”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where [UserName]='AND ID  AND Username  AND Userpassword  AND Realname  AND Popularizecode  AND Registertime   ExeScalar():字符串 'AND ID  AND Username  AND Userpassword  AND Realname  AND Popularizecode  AND Registertime' 后的引号不完整。
+“AND ID  AND Username  AND Userpassword  AND Realname  AND Popularizecode  AND Registertime”附近有语法错误。<br>

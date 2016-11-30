@@ -1,0 +1,15 @@
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Visualizer.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Visualizer.pdb
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Data.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Data.xml
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\obj\Debug\CYQ.Visualizer.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\obj\Debug\CYQ.Visualizer.pdb
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\TY.Data.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\TY.Data.pdb
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\TY.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Visualizer.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Visualizer.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\obj\Debug\CYQ.Visualizer.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\obj\Debug\CYQ.Visualizer.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Debug\CYQ.Visualizer.XML

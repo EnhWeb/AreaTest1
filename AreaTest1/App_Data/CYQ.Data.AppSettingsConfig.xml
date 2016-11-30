@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+  <add key="webpages:Version" value="3.0.0.0" />
+  <add key="webpages:Enabled" value="true" />
+  <add key="ClientValidationEnabled" value="true" />
+  <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+  
+  
+  
+  
+  <!-- CYQ.Data.AppConfig 的成员 常用配置文件项[Web(App).Config]的[appSettings|connectionStrings]项和属性名一致。 除了可以从配置文件配置，也可以直接赋值。 -->
+
+  <!-- string Aop  Aop 插件配置项 示例配置：[ 完整类名,程序集(dll)名称]<add key="Aop" value="Web.Aop.AopAction,Aop"/> -->
+  <!-- string EntitySuffix  生成的实体类的后缀。 -->
+  <!-- bool IsEnumToInt  是否使用表字段枚举转Int方式（默认为false）。 设置为true时，可以加快一点性能，但生成的表字段枚举必须和数据库一致。 -->
+  <add key="IsEnumToInt" value="false" />
+  <!-- string ThreadBreakPath  Tool.ThreadBreak 使用时，外置的文件配置相对路径（默认在环境变量Temp对应文件中） -->
+  <add key="ThreadBreakPath" value="Temp\\" />
+
+
+  <!--                    CYQ.Data.AppConfig.Cache 的成员                     -->
+  <!-- int DefaultCacheTime  Cache.CacheManage 默认缓存项的时间[分钟(默认60)] -->
+  <add key="DefaultCacheTime" value="1440" />
+  <!-- string IngoreCacheColumns  AutoCache开启时，可以设置不受更新影响的列名，用Json格式。 {talbeName1:'column1,column2',talbeName2:'column1,column2'} -->
+  <add key="IngoreCacheColumns" value="{talbeName1:'column1,column2',talbeName2:'column1,column2'}" />
+  <!-- bool IsAutoCache  是否智能缓存数据（默认开启） -->
+  <add key="IsAutoCache" value="true" />
+  <!-- string MemCacheServers  分布式缓存的服务器配置，多个用逗号（,）分隔 -->
+  <add key="MemCacheServers" value="" />
+  <!-- string NoCacheTables  AutoCache开启时，可以设置不缓存的Table，多个用逗号分隔 -->
+  <add key="NoCacheTables" value="Table_TY_Member1,Table_TY_Admin,Table_TY_Message" />
+
+
+  <!--                       CYQ.Data.AppConfig.DB 的成员                        -->
+  <!-- string AutoID  MAction 操作 Oracle 时自增加int类型ID所需要配置的序列ID，Guid为ID则不用。 如果需要为每个表都配置一个序列号，可以使用：SEQ_{0} 其中{0}会自动配对成表名，如果没有{0}，则为整个数据库共用一个序列。 默认参数值：SEQ_{0} -->
+  <add key="AutoID" value="SEQ_{0}" />
+  
+  <!-- int CommandTimeout  全局的数据库命令默认超时设置，默认值120秒（单位：秒） -->
+  <add key="CommandTimeout" value="40" />
+  <!-- string DefaultConn  默认数据库链接（可赋完整链接语句或Web.config配置项名称） 如果不在配置文件(Web.Config）上配置Conn链接，可对此属性赋值进行配置。 -->
+  <!-- string DeleteField  删除字段名称（若表存在此设置的字段名称时，MActon的删除操作将变更变为更新操作） 默认：IsDeleted -->
+  <add key="DeleteField" value="IsDeleted" />
+  <!-- string EditTimeFields  更新时间字段名称（若表存在指定字段名称时，自动更新时间，多个用逗号分隔） -->
+  <add key="EditTimeFields" value="UpdateTime" />
+  <!-- string FilterSqlInjection  MAction所有操作中的where条件，默认有超强的过滤单词，来过滤Sql注入关键字，如果语句包含指定的过滤词，则会返回错误信息，并记录日志。 如果需要自定义关键字，可配置此项，如：“delete;from,truncate，其它单词”，分号表词组，需要同时包含两个词； 多个过滤词组以","逗号分隔 -->
+  <add key="FilterSqlInjection" value="delete;from,truncate" />
+  <!-- string HiddenFields  系统全局要隐藏的字段名称（默认值为："cyqrownum,rowguid,deletefield"） -->
+  <add key="HiddenFields" value="cyqrownum,rowguid,deletefield" />
+  <!-- int MasterSlaveTime  读写分离时用户对主数据库操作持续时间，默认值10秒（单位：秒）-->
+  <add key="MasterSlaveTime" value="12" />
+  <!-- bool PagerBySelectBase  MSSQL是否启用分页存储过程SelectBase，默认false -->
+  <add key="PagerBySelectBase" value="false" />
+  <!-- string SchemaMapPath  MAction 可将表架构映射到外部指定相对路径[外部存储,可避开数据库读取] -->
+  <add key="SchemaMapPath" value="Temp\\TableSchema\\" />
+
+
+  <!--                   CYQ.Data.AppConfig.Debug 的成员  调试类AppDebug 相关的配置                      -->
+  <!-- int InfoFilter  毫秒数（这个是在AppDebug开启后的：可通过此项设置条件过滤出时间(ms)较长的SQL语句） -->
+  <add key="InfoFilter" value="5" />
+  <!-- bool OpenDebugInfo  开启信息调试记录：开启后MAction.DebugInfo可输出执行日志。 同时AppDebug若要使用，也需要开启此项。 -->
+  <add key="OpenDebugInfo" value="true" />
+  <!-- int SqlFilter  毫秒数（这个是在对所有SQL语句的：将所有长时间(ms)的SQL语句写入日志，对应配置项LogPath的路径） -->
+  <add key="SqlFilter" value="Temp\\SqlFilterLongTime\\" />
+
+
+  <!--                      CYQ.Data.AppConfig.Log 的成员  日志类Log 相关的配置                       -->
+  <!-- bool IsWriteLog  是否写数据库异常日志:开启时：有异常不抛出，转写入数据库；不开启：有异常会抛出 -->
+  <add key="IsWriteLog" value="true" />
+  <!-- string LogConn  CYQ.Data.Log 类记录数据库异常日志 - 数据库链接配置 -->
+  <add key="LogConn" value="Data Source=.;Initial Catalog=db_Log;Integrated Security=True" />
+  <!-- string LogPath  文本日志的配置相对路径（默认为：Logs\\"） -->
+  <add key="LogPath" value="Temp\\Logs\\" />
+  <!-- string LogTableName  异常日志表名（默认为SysLogs，可配置） -->
+  <add key="LogTableName" value="SysLogs" />
+
+
+  <!--                     CYQ.Data.AppConfig.XHtml 的成员  XHtml 相关的配置                     -->
+  <!-- string CDataLeft   Xml.XHtmlHelper 中使用的 "<![CDATA[" 项 -->
+  <add key="CDataLeft" value="&lt;![CDATA[" />
+  <!-- string CDataRight  Xml.XHtmlHelper 中使用的 "]]>" 项 -->
+  <add key="CDataRight" value="]]&gt;" />
+  <!-- string Domain   Xml.MutilLanguage 语言切换设置时Cookie所需要的网站主域名[不带www] -->
+  <add key="Domain" value="webtest.com" />
+  <!-- string DtdUri  Xml.XHtmlHelper 中操作Html需要配置的DTD解析文档相对路径 -->
+  <!-- string SysLangKey  Xml.MutilLanguage 类的默认语言Key，默认值：Chinese -->
+  <add key="SysLangKey" value="Chinese" />
+
+
+  <!--
+    Web.Config默认编码格式为UTF-8，对于XML文件，要用到实体转义码来替换。对应关系如下：
+    说明      字符    转义码
+    & 符号    &       &amp;
+    单引号    '       &apos;
+    双引号    "       &quot;
+    大于      >       &gt;
+    小于      <       &lt;    
+    -->
+
+
+</appSettings>

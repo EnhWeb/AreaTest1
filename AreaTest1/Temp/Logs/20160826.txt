@@ -1,0 +1,150 @@
+http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery211026863168064064424_1472134483266&_search=true&nd=1472187471832&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22ff%22%7D%5D%7D&_=1472134483268
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 12:57:52 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery211026863168064064424_1472134483266&_search=true&nd=1472187471832&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22ff%22%7D%5D%7D&_=1472134483268
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():字符串 'AND Realname' 后的引号不完整。
+“AND Realname”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where [UserName]='AND Realname   ExeScalar():字符串 'AND Realname' 后的引号不完整。
+“AND Realname”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472194628625&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%5D%7D&_=1472194623427
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 14:57:08 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472194628625&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%5D%7D&_=1472194623427
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'AND' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where AND Userpassword = 'test'   ExeScalar():关键字 'AND' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472194797936&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%5D%7D&_=1472194623429
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 14:59:58 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472194797936&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%5D%7D&_=1472194623429
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'AND' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where AND Userpassword = 'test'  AND Realname = 'test1'   ExeScalar():关键字 'AND' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472194971530&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22tgm%22%7D%5D%7D&_=1472194623430
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:02:54 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472194971530&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22tgm%22%7D%5D%7D&_=1472194623430
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'AND' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where AND Userpassword = 'test'  AND Realname = 'test1'  AND Popularizecode > 'tgm'   ExeScalar():关键字 'AND' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472195260326&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22tgm%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22c%22%7D%5D%7D&_=1472194623431
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:07:42 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472195260326&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22tgm%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22c%22%7D%5D%7D&_=1472194623431
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'AND' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where AND Userpassword = 'test'  AND Realname = 'test1'  AND Popularizecode > 'tgm'  AND Registertime > 'c'   ExeScalar():关键字 'AND' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472195451793&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22tgm%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22c%22%7D%5D%7D&_=1472194623432
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:10:54 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472195451793&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test%22%7D%2C%7B%22field%22%3A%22Realname%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test1%22%7D%2C%7B%22field%22%3A%22Popularizecode%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22tgm%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%22c%22%7D%5D%7D&_=1472194623432
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1   AND Userpassword = 'test'  AND Realname = 'test1'  AND Popularizecode > 'tgm'  AND Registertime > 'c'   ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472195870429&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test2%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%2220%22%7D%5D%7D&_=1472194623447
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:17:50 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472195870429&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Userpassword%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%22test2%22%7D%2C%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22bw%22%2C%22data%22%3A%2220%22%7D%5D%7D&_=1472194623447
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1   AND Userpassword = 'test2'  AND Registertime > '20'   ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197109534&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=456&searchOper=cn&_=1472194623461
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:38:29 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197109534&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=456&searchOper=cn&_=1472194623461
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“ID”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 ID LIKE '%456%'   ExeScalar():“ID”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197116198&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=2&searchOper=cn&_=1472194623462
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:38:36 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197116198&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=2&searchOper=cn&_=1472194623462
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“ID”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 ID LIKE '%2%'   ExeScalar():“ID”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197119511&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=cn&_=1472194623463
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:38:39 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197119511&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=cn&_=1472194623463
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“ID”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 ID LIKE '%20%'   ExeScalar():“ID”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197122926&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=eq&_=1472194623464
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:38:42 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197122926&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=eq&_=1472194623464
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“ID”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 ID LIKE '%20%'   ExeScalar():“ID”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197126359&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=ne&_=1472194623465
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:38:46 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197126359&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=ne&_=1472194623465
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“ID”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 ID LIKE '%20%'   ExeScalar():“ID”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197130016&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=bw&_=1472194623466
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:38:50 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197130016&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=ID&searchString=20&searchOper=bw&_=1472194623466
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“ID”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 ID LIKE '%20%'   ExeScalar():“ID”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197153387&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test4&searchOper=eq&_=1472194623467
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:39:13 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197153387&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test4&searchOper=eq&_=1472194623467
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“Username”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 Username LIKE '%test4%'   ExeScalar():“Username”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197156836&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test3&searchOper=eq&_=1472194623468
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:39:16 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197156836&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test3&searchOper=eq&_=1472194623468
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“Username”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 Username LIKE '%test3%'   ExeScalar():“Username”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197159589&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test2&searchOper=eq&_=1472194623469
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:39:19 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197159589&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test2&searchOper=eq&_=1472194623469
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“Username”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 Username LIKE '%test2%'   ExeScalar():“Username”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197163253&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test1&searchOper=eq&_=1472194623470
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 15:39:23 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21108070980886107872_1472194623425&_search=true&nd=1472197163253&rows=10&page=1&sidx=Id&sord=desc&filters=&searchField=Username&searchString=test1&searchOper=eq&_=1472194623470
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():“Username”附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1 Username LIKE '%test1%'   ExeScalar():“Username”附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472219143912&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262275
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 21:45:46 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472219143912&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262275
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'OR' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND OR ID = 1  OR ID = 2  OR ID = 3  OR ID = 4  OR ID = 5  ExeScalar():关键字 'OR' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472219308428&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262276
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 21:48:31 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472219308428&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262276
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'OR' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND OR ID = 1  OR ID = 2  OR ID = 3  OR ID = 4  OR ID = 5  ExeScalar():关键字 'OR' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472219427135&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262277
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 21:50:29 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472219427135&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262277
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():关键字 'OR' 附近有语法错误。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND OR ID = 1  OR ID = 2  OR ID = 3  OR ID = 4  OR ID = 5  ExeScalar():关键字 'OR' 附近有语法错误。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472220651969&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262279
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/26 22:10:52 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21104153186930233015_1472218262270&_search=true&nd=1472220651969&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22eq%22%2C%22data%22%3A%221%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%222%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%223%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%224%22%7D%2C%7B%22field%22%3A%22ID%22%2C%22op%22%3A%22ne%22%2C%22data%22%3A%225%22%7D%5D%7D&searchField=&searchString=&searchOper=&_=1472218262279
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():在应使用条件的上下文(在 'ID' 附近)中指定了非布尔类型的表达式。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND D ID = 1  AND ID <> 2  AND ID <> 3  AND ID <> 4  AND ID <> 5   ExeScalar():在应使用条件的上下文(在 'ID' 附近)中指定了非布尔类型的表达式。<br>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+  ******************************************************************************
+  **                    LTP Interop Library Build Items                    **
+  ******************************************************************************
+  -->
+
+  <ItemGroup>
+    <LTPInteropFiles Condition="'$(MSBuildThisFileDirectory)' != '' And
+                                   HasTrailingSlash('$(MSBuildThisFileDirectory)')"
+                        Include="$(MSBuildThisFileDirectory)**\ltpcsharp.native.*" />
+  </ItemGroup>
+
+  <!--
+  ******************************************************************************
+  **                   LTP Interop Library Build Targets                   **
+  ******************************************************************************
+  -->
+
+  <Target Name="CopyLTPInteropFiles"
+          Condition="'$(CopyLTPInteropFiles)' != 'false' And
+                     '$(OutputPath)' != '' And
+                     HasTrailingSlash('$(OutputPath)') And
+                     Exists('$(OutputPath)')"
+          Inputs="@(LTPInteropFiles)"
+          Outputs="@(LTPInteropFiles -> '$(OutputPath)%(RecursiveDir)%(Filename)%(Extension)')">
+    <!--
+        NOTE: Copy "ltpcsharp.native.dll" and all related files, for every
+              architecture that we support, to the build output directory.
+    -->
+    <Copy SourceFiles="@(LTPInteropFiles)"
+          DestinationFiles="@(LTPInteropFiles -> '$(OutputPath)%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+
+  <!--
+  ******************************************************************************
+  -->
+
+  <Target Name="CleanLTPiteInteropFiles"
+          Condition="'$(CleanLTPiteInteropFiles)' != 'false' And
+                     '$(OutputPath)' != '' And
+                     HasTrailingSlash('$(OutputPath)') And
+                     Exists('$(OutputPath)')">
+    <!--
+        NOTE: Delete "ltpcsharp.native.dll" and all related files, for every
+              architecture that we support, from the build output directory.
+    -->
+    <Delete Files="@(LTPInteropFiles -> '$(OutputPath)%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+
+  <!--
+  ******************************************************************************
+  **                 LTP Interop Library Build Properties                  **
+  ******************************************************************************
+  -->
+
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn);
+      CopyLTPInteropFiles;
+    </BuildDependsOn>
+    <CleanDependsOn>
+      $(CleanDependsOn);
+      CleanLTPiteInteropFiles;
+    </CleanDependsOn>
+  </PropertyGroup>
+</Project>

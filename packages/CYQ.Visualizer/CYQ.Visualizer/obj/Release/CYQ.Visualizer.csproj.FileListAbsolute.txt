@@ -1,0 +1,15 @@
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Visualizer.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Visualizer.pdb
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Data.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Data.xml
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\obj\Release\CYQ.Visualizer.dll
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\obj\Release\CYQ.Visualizer.pdb
+F:\Code\Project\MyProject\MySpace\CYQ.Visualizer\CYQ.Visualizer\obj\Release\CYQ.Visualizer.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Visualizer.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Visualizer.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\obj\Release\CYQ.Visualizer.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\obj\Release\CYQ.Visualizer.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Release\CYQ.Visualizer.XML
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\obj\Release\CYQ.Visualizer.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160819\packages\CYQ.Visualizer\CYQ.Visualizer\bin\Release\使用说明.txt

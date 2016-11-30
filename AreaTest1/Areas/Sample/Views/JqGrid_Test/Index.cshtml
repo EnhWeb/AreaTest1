@@ -1,0 +1,198 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>View</title>
+
+
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    <script type="text/ecmascript" src="~/StaticFile/Sample/jqGrid/jquery.min.js"></script>
+    <!-- We support more than 40 localizations -->
+    <script type="text/ecmascript" src="~/StaticFile/Sample/jqGrid/i18n/grid.locale-cn.js"></script>
+    <!-- This is the Javascript file of jqGrid -->
+    <script type="text/ecmascript" src="~/StaticFile/Sample/jqGrid/jquery.jqGrid.min.js"></script>
+    <!-- This is the localization file of the grid controlling messages, labels, etc.
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+    <link href="~/StaticFile/Sample/jqGrid/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <script src="~/StaticFile/Sample/jqGrid/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- The link to the CSS that the grid needs -->
+    <link rel="stylesheet" type="text/css" media="screen" href="~/StaticFile/Sample/jqGrid/ui.jqgrid.css" />
+    
+
+</head>
+<body>
+    <div style="width:auto;"> 
+
+
+
+
+        @Html.TextBox("result", "", new { a="ff",style="width:800px;" })
+
+        <table id="jqGrid"></table>
+        <div id="jqGridPager"></div>
+
+<script type="text/javascript">
+    var editOptions = {
+        afterSubmit: function (response, postdata) {
+            //这里是否需要返回，得看源码或者帮助文档
+            var r = $.parseJSON(response.responseText);//动态页返回json格式的字符串，如{success:true/false}之类的，为false添加err属性什么的，成功则返回new_id
+            if (!r.success) {
+                alert("状态消息：" + r.message);//显示返回值
+            }
+            //这里要返回一个数组,  
+            // 1.true/false，表示是否成功。  
+            // 2.message字符串  
+            // 3. delete_id
+            return [r.success, r.message, r.id];
+        }
+    }
+
+    $(document).ready(function () {
+        $("#jqGrid").jqGrid({   @* Id选择器# 找到对应的table元素 *@
+            @* url: 'http://trirand.com/blog/phpjqgrid/examples/jsonp/getjsonp.php?callback=?&qwery=longorders', *@
+            url: '/Sample/JqGrid_Test/GetDataForMsSql?callback=?',  @* 数据地址，相对或绝对地址URL *@
+            mtype: "GET",       @* 数据请求方式：（GET|POST） *@
+            datatype: "jsonp",  @* 数据类型定义，jsonp *@
+            colModel: [         @* 列定义 http://www.cnblogs.com/webenh/p/5806568.html *@
+                { label: 'ID', name: 'Id', key: true, width: "75", align: "center", resizable: false, searchoptions: { sopt: ['eq'] } },            @* align: "center" 列对齐方式        resizable:false 禁止调速宽度 *@
+                { label: '用户名', name: 'UserName', width: 150, classes: "class1 class2", editable: true, edittype: "text", searchoptions: { sopt: ['cn'] } },     @* classes 设置列的CSS，如：classes:"class1 class2 ui-ellipsis" *@
+                { label: '用户密码', name: 'UserPassWord', width: 150, editable: false, edittype: "password", searchoptions: { sopt: ['cn'] } },
+                { label: '姓名', name: 'RealName', width: 150, editable: false, edittype: "text", searchoptions: { sopt: ['cn'] } },
+                { label: '推广码', name: 'PopularizeCode', width: 150, sortable: false, editable: false, edittype: "text", searchoptions: { sopt: ['cn'] } }, @* sortable:false 禁用表格列排序 *@
+                { label: '注册时间', name: 'RegisterTime', width: 120, datefmt: "Date(yyyy/mm/dd)", editable: false, edittype: "text", searchoptions: { sopt: ['gt'] } },    @* datefmt 对日期列进行格式化  *@
+            ],
+
+            caption: "用户信息",    @* 说明字段 如：（JSON Example） *@
+            recordpos: 'right',     @* 数据量统计显示位置 *@
+            viewrecords: true,      @* 是否显示页面统计信息 *@
+            rowList: [10, 20, 30],  @* 每页行数选择列表 *@
+            width: "100%",  @* 780, //宽度 *@
+            height: "auto", @* 250, //高度 *@
+            rowNum: 10,     @* 每页行数 *@
+            pager: "#jqGridPager",  @* 分页div ID *@
+            sortname: 'Id',         @* 默认排序字段名称 *@
+            sortorder: "DESC",      @* 默认排序方式 *@
+
+            //searchitems: [
+            //                { display: "用户名", name: "Username" },
+            //                { display: "密码", name: "Userpassword" },
+            //                { display: "姓名", name: "Realname" },
+            //                { display: "推广码", name: "Popularizecode" },
+            //                { display: "注册时间", name: "Registertime" }
+            //],//列表中搜索的条件项
+            //searchMode: false,  //搜索模式，初始化时不加载数据并隐藏列表
+
+
+
+            onSelectRow: function (id) { if (id && id !== lastsel3) { $("#result").val(id); } },
+            onSortCol: function (name, index) { $("#result").val("您点击了列排序 列名: " + name + " 列索引: " + index); },
+            ondblClickRow: function (id) { $("#result").val("您双击的行id: " + id); },
+
+            multiselect: true,
+
+
+            multipleSearch: true,
+            multipleGroup: true,
+
+
+
+            shrinkToFit: false,
+
+
+            editurl: "/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback",     @* POST提交 添加编辑删除提交到的服务器URL地址 *@
+            
+
+            repeatitems: false    @* 设置成false，在后台设置值的时候，可以乱序。且并非每个值都得设 *@
+            //                                                                               回调     编辑完成后   添加完成后   删除完成后
+        }).navGrid("#jqGridPager", { edit: true, add: true, del: true, search: true, refresh: true }, editOptions, editOptions, editOptions, { multipleSearch: true, multipleGroup: false });
+
+
+        var lastsel3 = 0;
+
+
+
+
+        $('#jqGrid').jqGrid('filterToolbar', {
+            stringResult: true,
+            searchOperators: true,
+            onClearSearchValue: function (elem, coli, soptions, defval) {
+                if (coli > 0) {
+                    var name = this.p.colModel[coli].name;
+                    if (name === 'CustomerID') {
+                        $(elem).val(defval);
+                        $(elem).multiselect('refresh');
+                        $(elem).siblings('button.ui-multiselect').css({
+                            width: "100%",
+                            marginTop: "1px",
+                            marginBottom: "1px",
+                            paddingTop: "3px"
+                        });
+                    }
+
+                }
+            },
+            beforeClear: function () {
+                var elem = $("#gs_CustomerID");
+                elem.val("");
+                elem.multiselect('refresh');
+                elem.siblings('button.ui-multiselect').css({
+                    width: "100%",
+                    marginTop: "1px",
+                    marginBottom: "1px",
+                    paddingTop: "3px"
+                });
+            }
+        });
+
+
+        //var timer;
+        //$("#search_cells").on("keyup", function () {
+        //    var self = this;
+        //    if (timer) { clearTimeout(timer); }
+        //    timer = setTimeout(function () {
+        //        //timer = null;
+        //        $("#jqGrid").jqGrid('filterInput', self.value);
+        //    }, 0);
+        //});
+    });
+
+
+
+    @*
+    //javascript 测式
+    try {
+        var carname = new String;
+        var x = new Number;
+        var cars = new Array;
+        var person = Object;
+        cars[0] = "测式";
+        cars[1] = 555;
+        cars[2] = 234234234;
+        var foo = { a: 12, b: 22, c: "张三", d: cars, e: { a: "李四", b: [{ a: "五个" }, {a:"六个"}]} };
+
+        document.write("说明：" + foo.e.b[1].a);
+
+        document.write(document.localStorage);
+    } catch (e)
+    {
+        alert(e);
+    }
+    *@
+
+</script>
+
+<script src="~/StaticFile/Sample/jqGrid/jquery-ui.min.js"></script>
+
+<script src="~/StaticFile/Sample/jqGrid/src/grid.filter.js"></script>
+
+    </div>
+</body>
+</html>

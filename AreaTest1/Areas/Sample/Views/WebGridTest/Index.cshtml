@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.CurrentController_WebGrid = true;
+
+
+    List<AreaTest1.App_Code.UserModel> list = new List<AreaTest1.App_Code.UserModel>(30000)
+    {
+        new AreaTest1.App_Code.UserModel() { Id=1,  UserName="张三", PassWord="test123", Mobile=15811111111, Email="zshan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=2,  UserName="李四", PassWord="test123", Mobile=15811111111, Email="234@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=3,  UserName="王三", PassWord="test123", Mobile=15811111111, Email="345345@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=4,  UserName="五个", PassWord="test123", Mobile=15811111111, Email="ertetr@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=5,  UserName="王五", PassWord="test123", Mobile=15811111111, Email="dgfdgf@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=6,  UserName="刘六", PassWord="test123", Mobile=15811111111, Email="cvbcvb@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=7,  UserName="李七", PassWord="test123", Mobile=15811111111, Email="asdasd@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=8,  UserName="李白", PassWord="test123", Mobile=15811111111, Email="sfdsdf@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=9,  UserName="张四", PassWord="test123", Mobile=15811111111, Email="cvbcvb@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=10, UserName="国家", PassWord="test123", Mobile=15811111111, Email="ghjghj@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=11, UserName="地震", PassWord="test123", Mobile=15811111111, Email="jlkjkljkl@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=12, UserName="有关", PassWord="test123", Mobile=15811111111, Email="ghjgjhgjhgjh@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=13, UserName="人员", PassWord="test123", Mobile=15811111111, Email="zshartnryqq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=14, UserName="我国", PassWord="test123", Mobile=15811111111, Email="zshadgfdgfn@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=15, UserName="一个", PassWord="test123", Mobile=15811111111, Email="zshsfdsfan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=16, UserName="在于", PassWord="test123", Mobile=15811111111, Email="zssfdsdfhan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=17, UserName="是否", PassWord="test123", Mobile=15811111111, Email="zcvbcvbshan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=18, UserName="工作", PassWord="test123", Mobile=15811111111, Email="zhgjgshan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=19, UserName="了解", PassWord="test123", Mobile=15811111111, Email="ztyutyushadn@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=20, UserName="以及", PassWord="test123", Mobile=15811111111, Email="zshrerean@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=21, UserName="于有", PassWord="test123", Mobile=15811111111, Email="zshddxcvfgan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=22, UserName="地方", PassWord="test123", Mobile=15811111111, Email="zshfdgan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=23, UserName="地下", PassWord="test123", Mobile=15811111111, Email="zshaxvcdfgdfgn@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=24, UserName="一种", PassWord="test123", Mobile=15811111111, Email="zshanxcvs@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=25, UserName="上面", PassWord="test123", Mobile=15811111111, Email="zshdsdan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=26, UserName="不堪", PassWord="test123", Mobile=15811111111, Email="zsfsdfhan@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=27, UserName="是要", PassWord="test123", Mobile=15811111111, Email="zshaxcvn@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=28, UserName="中毒", PassWord="test123", Mobile=15811111111, Email="zshasfdwern@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=29, UserName="国际", PassWord="test123", Mobile=15811111111, Email="1233132@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=30, UserName="民族", PassWord="test123", Mobile=15811111111, Email="456456@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=31, UserName="同时", PassWord="test123", Mobile=15811111111, Email="789789789@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=32, UserName="了事", PassWord="test123", Mobile=15811111111, Email="4564565@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=33, UserName="发展", PassWord="test123", Mobile=15811111111, Email="213312312@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=34, UserName="以及", PassWord="test123", Mobile=15811111111, Email="5456456@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=35, UserName="经济", PassWord="test123", Mobile=15811111111, Email="87877878@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=36, UserName="我们", PassWord="test123", Mobile=15811111111, Email="878787@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=37, UserName="人家", PassWord="test123", Mobile=15811111111, Email="65656565@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=38, UserName="有关", PassWord="test123", Mobile=15811111111, Email="45454545@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=39, UserName="的话", PassWord="test123", Mobile=15811111111, Email="56565656@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=40, UserName="和他", PassWord="test123", Mobile=15811111111, Email="87878787@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=41, UserName="主要", PassWord="test123", Mobile=15811111111, Email="454566565@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=42, UserName="产品", PassWord="test123", Mobile=15811111111, Email="12121212@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+        new AreaTest1.App_Code.UserModel() { Id=43, UserName="为了", PassWord="test123", Mobile=15811111111, Email="5465654@qq.com", CreateTime=DateTime.Now, RegClientIp="158.56.55.236",  CurrentClientIp="127.0.0.1"},
+    };
+
+    list.AddRange(list); list.AddRange(list); list.AddRange(list); list.AddRange(list);
+    list.AddRange(list); list.AddRange(list); list.AddRange(list); list.AddRange(list); 
+
+
+    
+    //  WebGrid 构造函数参数
+    // 名称 	类型 	备注
+    // source 	IEnumerable<dynamic> 	要呈现的数据。
+    // columnNames 	IEnumerable<string> 	筛选呈现的列。
+    // defaultSort 	string 	指定作为排序依据的默认列。
+    // rowsPerPage 	int 	控制每页显示的行数（默认值为 10）。
+    // canPage 	bool 	启用或禁用数据分页。
+    // canSort 	bool 	启用或禁用数据排序。
+    // ajaxUpdateContainerId 	string 	网格中包含元素的 ID，用来启用 AJAX 支持。
+    // ajaxUpdateCallback 	string 	完成 AJAX 更新后调用的客户端函数。
+    // fieldNamePrefix 	string 	支持多个网格时查询字符串字段使用的前缀。
+    // pageFieldName 	string 	页码的查询字符串字段名称。
+    // selectionFieldName 	string 	所选行号的查询字符串字段名称。
+    // sortFieldName 	string 	排序列的查询字符串字段名称。
+    // sortDirectionFieldName 	string 	排序方向的查询字符串字段名称。
+
+    var grid = new WebGrid(
+                            source: list,
+                            rowsPerPage: 15,
+                            canPage: true,
+                            canSort: true,
+                            ajaxUpdateContainerId: "ajaxUpdateContainerId(id)",
+                            ajaxUpdateCallback:"ajaxUpdateCallBack(id)",
+                            fieldNamePrefix: "g1-",
+                            pageFieldName: "page",
+                            selectionFieldName: null,
+                            sortFieldName: null,
+                            sortDirectionFieldName: null
+                        );
+
+                        
+                        
+                        
+    //定义要显示的列和显示的顺序，和显示的列头名称
+    List<WebGridColumn> webgridcolumn = new List<WebGridColumn>()
+    {
+        new WebGridColumn(){ ColumnName="Id", Header="主键", CanSort=true, Style="column-Id",},
+        
+        new WebGridColumn(){ ColumnName="UserName", Header="用户名", CanSort=true, Style="column-UserName", Format= item => Html.ActionLink((String)item.UserName,"details",new {id=item.Id},htmlAttributes:new{@target="_blank",@title=""})},
+        new WebGridColumn(){ ColumnName="PassWord", Header="密码", CanSort=true, Style="column-PassWord",},
+        new WebGridColumn(){ ColumnName="Mobile", Header="手机", CanSort=true, Style="column-Mobile",},
+        new WebGridColumn(){ ColumnName="Email", Header="邮箱", CanSort=true, Style="column-Email", Format=@<text><a href="mailto:@(item.Email)">@item.Email</a></text>,},
+        new WebGridColumn(){ ColumnName="CreateTime", Header="注册时间", CanSort=true, Style="column-CreateTime",},
+        new WebGridColumn(){ ColumnName="RegClientIp", Header="注册IP", CanSort=true, Style="column-RegClientIp",},
+        new WebGridColumn(){ ColumnName="CurrentClientIp", Header="当前IP", CanSort=true, Style="column-CurrentClientIp",},
+        
+        new WebGridColumn(){ ColumnName="Id", Header="操作", CanSort=false, Style="column-Controller", Format=@<text><button onclick="grid_delete(@item.Id)">删除</button><button onclick="grid_update(@item.Id)">修改</button></text>},
+    };
+}
+
+
+
+
+
+<h2>Index  页大小：@(grid.RowsPerPage)条 第@(grid.PageIndex+1)页 共@(grid.PageCount)页 </h2>
+<div class="table-responsive">
+    @grid.GetHtml("grid-table table table-hover", "grid-head", "grid-footer", "grid-row", "grid-alternatingRow", "grid-selectedRow", "表头", true, false, "NULL", webgridcolumn, null, WebGridPagerModes.All, "首页", "上一页", "下一页", "末页", 80, "test='123'")
+</div>
+
+
+
+
+
+<style type="text/css">
+    body {
+        background-color:#ffe0e0;
+    }
+    table {
+        background-color:#eeeeee;
+        margin: 10px auto;
+        width: 1000px;
+        color: #666666;
+        border-collapse: collapse;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #099c39;
+    }
+
+    table thead {
+        background-color: #099c39;
+    }
+    table thead tr{
+        border-top:10px solid #099c39;
+        border-bottom:10px solid #099c39;
+    }
+    table thead tr th {
+        border-right: 1px dotted #ebebeb;           
+        color:#ebebeb;
+        font-weight:normal;
+    }
+    table thead tr th:last-child {
+        border-right: 1px solid #099c39;
+    }
+
+    table thead tr th a, table thead tr th a:focus, table thead tr th a:hover, table thead tr th a:before, table thead tr th a:active, table thead tr th a:link {
+        color: #eeeeee;
+        text-decoration: none;
+    }
+
+    table th {
+        padding: 0px 7px;
+    }
+    table td {
+        padding: 7px 8px;
+    }
+    table tbody tr td ,table tfoot tr td{
+        border-top: 1px solid #dddddd;
+    }
+    table tbody tr td:first-child {
+        /*border-right: 1px solid #099c39;*/
+        border-right: 1px solid #dddddd;
+        text-align:center;
+    }
+</style>

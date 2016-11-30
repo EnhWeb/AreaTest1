@@ -1,0 +1,139 @@
+﻿@{
+    if (ViewBag.CurrentController_Bootstrap == null)
+    {
+        ViewBag.CurrentController_Bootstrap = false; 
+    }
+    if (ViewBag.CurrentController_BootGrid == null)
+    {
+        ViewBag.CurrentController_BootGrid = false;
+    }
+    if (ViewBag.CurrentController_WebGrid == null)
+    {
+        ViewBag.CurrentController_WebGrid = false;
+    }
+    if (ViewBag.CurrentController_JqGrid == null)
+    {
+        ViewBag.CurrentController_JqGrid = false;
+    }
+
+}<!DOCTYPE html>
+<!--
+                              _.._        ,------------.
+                           ,'      `.    ( We want you! )
+                          /  __) __` \    `-,----------'
+                         (  (`-`(-')  ) _.-'
+                         /)  \  = /  (
+                        /'    |--' .  \
+                       (  ,---|  `-.)__`
+                        )(  `-.,--'   _`-.
+                       '/,'          (  Uu",
+                        (_       ,    `/,-' )
+                        `.__,  : `-'/  /`--'
+                          |     `--'  |
+                          `   `-._   /
+                           \        (
+                           /\ .      \.  欢迎光临
+                          / |` \     ,-\
+                         /  \| .)   /   \
+                        ( ,'|\    ,'     :
+                        | \,`.`--"/      }
+                        `,'    \  |,'    /
+                       / "-._   `-/      |
+                       "-.   "-.,'|     ;
+                      /        _/["---'""]
+                     :        /  |"-     '
+                     '           |      /
+                                 `      |
+-->
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - AreasTest</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("总首页", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                </div>
+                <div class="navbar-collapse collapse" style="max-height:none;">
+                    <ul class="nav navbar-nav">
+                        <li @(Html.Raw(ViewBag.CurrentController_Bootstrap ? " class=\"active\"" : ""))>@Html.ActionLink("BootStrap", "Index", "Bootstrap", new { area = "Sample" }, new { @class = "" })</li>
+                        <li @(Html.Raw(ViewBag.CurrentController_BootGrid ? " class=\"active\"" : ""))>@Html.ActionLink("BootGrid", "Index", "JqueryBootGrid", new { area = "Sample" }, new { @class = "" })</li>
+                        <li @(Html.Raw(ViewBag.CurrentController_WebGrid ? " class=\"active\"" : ""))>@Html.ActionLink("WebGrid", "Index", "WebGridTest", new { area = "Sample" }, new { @class = "" })</li>
+                        <li @(Html.Raw(ViewBag.CurrentController_JqGrid ? " class=\"active\"" : ""))>@Html.ActionLink("JqGrid", "Index", "JqGrid_Test", new { area = "Sample" }, new { @class = "", target = "_blank_JqGrid_Test" })</li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">下拉<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">简体中文<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    @*自动多语言*@
+                                    <div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div>
+                                    <script type='text/javascript'>setTimeout(function () { { var s = document.createElement('script'); s.type = 'text/javascript'; s.charset = 'UTF-8'; s.src = ((location && location.href && location.href.indexOf('https') == 0) ? 'https://ssl.microsofttranslator.com' : 'http://www.microsofttranslator.com') + '/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=False&ui=true&settings=undefined&from='; var p = document.getElementsByTagName('head')[0] || document.documentElement; p.insertBefore(s, p.firstChild); } }, 0);</script>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">注册</a></li>
+                    </ul>
+
+                    <form class="navbar-form navbar-right visible-lg visible-xs">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="密码">
+                        </div>
+                        <button class="btn btn-success" type="submit">登陆</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container body-content">
+            @RenderBody()
+    </div>
+
+    
+    <footer class="container text-center">
+        <hr />
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+
+</body>
+</html>

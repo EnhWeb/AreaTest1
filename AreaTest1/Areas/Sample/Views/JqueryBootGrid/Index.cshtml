@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.CurrentController_BootGrid = true;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <!-- Styles -->
+    <link href="~/StaticFile/Sample/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/StaticFile/Sample/jQuery.Bootgrid/jquery.bootgrid.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">logo.png</div>
+            <div class="col-md-10">
+                导航栏
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">左则菜单栏</div>
+            <div class="col-md-9">
+
+
+
+
+                <table id="grid-data-api" class="table table-condensed table-hover table-striped" data-toggle="bootgrid" data-ajax="true" data-url="/Sample/JqueryBootGrid/GetDatas">
+                    <thead>
+                        <tr>
+                            <th data-column-id="Id" data-type="numeric" data-identifier="true" data-order="desc">主键</th>
+                            <th data-column-id="UserName">用户名</th>
+                            <th data-column-id="PassWord">密码</th>
+                            <th data-column-id="Mobile">手机</th>
+                            <th data-column-id="Email">邮箱</th>
+                            <th data-column-id="CreateTime">创建时间</th>
+                            <th data-column-id="RegClientIp">注册IP</th>
+                            <th data-column-id="CurrentClientIp">当前IP</th>
+                        </tr>
+                    </thead>
+                </table>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                底部&copy;版权
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/StaticFile/Sample/jquery/jquery-1.11.1.min.js"></script>
+    <script src="~/StaticFile/Sample/jQuery.Bootgrid/jquery.bootgrid.js"></script>
+
+    <script src="~/StaticFile/Sample/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/StaticFile/Sample/bootstrap/js/moderniz.2.8.1.js"></script>
+
+
+
+
+    <script>
+        $(function () {
+            $("#grid-data-api").bootgrid();
+
+
+
+            function init() {
+                $("#grid").bootgrid({
+                    formatters: {
+                        "link": function (column, row) {
+                            return "<a href=\"#\">" + column.id + ": " + row.id + "</a>";
+                        }
+                    },
+                    rowCount: [-1, 10, 50, 75]
+                });
+            }
+
+            init();
+        });
+
+
+
+
+
+    $(function () {
+        $("#home").addClass("container-fluid");
+        $("#main").addClass("row");
+
+        $("#mainContent").addClass("col-xs-12");
+        $("#sideBar").addClass("col-xs-12");
+
+        $("#mainContent").addClass("col-md-10");
+        $("#sideBar").addClass("col-xs-2");
+
+
+
+        $("home").css("min-width", "200px");
+    });
+    </script>
+</body>
+
+</html>

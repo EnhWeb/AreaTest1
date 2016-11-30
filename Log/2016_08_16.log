@@ -1,0 +1,71 @@
+﻿#Software: iisexpress
+#ProcessID: 12944
+#AppDomain: /LM/W3SVC/41/ROOT-28-131158274128630974
+#FileName: C:\Program Files (x86)\IIS Express\iisexpress.exe
+#BaseDirectory: C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\
+#CurrentDirectory: C:\Program Files (x86)\IIS Express
+#CommandLine: /config:"D:\Users\admin\Documents\IISExpress\config\applicationhost.config"  /site:"AreaTest1" /apppool:"Clr4IntegratedAppPool"
+#ApplicationType: Web
+#CLR: 4.0.30319.42000
+#OS: Windows NT 10.0.10586.0 x64, mwh08/DESKTOP-CLGQRT3
+#CPU: Intel(R) Core(TM) i5-4460 CPU @ 3.20GHz BFEBFBFF000306C3
+#Memory: 4,108M/8,063M
+#Date: 2016-08-16
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+21:23:35.234 82 W - NewLife.Core v5.4.2015.0511 Build 2016-01-31 18:53:46
+21:23:35.532 82 W - 使用IP数据库C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\App_Data\QQWry\qqwry.dat
+
+#Software: iisexpress
+#ProcessID: 12944
+#AppDomain: /LM/W3SVC/41/ROOT-29-131158280185114117
+#FileName: C:\Program Files (x86)\IIS Express\iisexpress.exe
+#BaseDirectory: C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\
+#CurrentDirectory: C:\Program Files (x86)\IIS Express
+#CommandLine: /config:"D:\Users\admin\Documents\IISExpress\config\applicationhost.config"  /site:"AreaTest1" /apppool:"Clr4IntegratedAppPool"
+#ApplicationType: Web
+#CLR: 4.0.30319.42000
+#OS: Windows NT 10.0.10586.0 x64, mwh08/DESKTOP-CLGQRT3
+#CPU: Intel(R) Core(TM) i5-4460 CPU @ 3.20GHz BFEBFBFF000306C3
+#Memory: 4,150M/8,063M
+#Date: 2016-08-16
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+21:33:40.720 88 W - NewLife.Core v5.4.2015.0511 Build 2016-01-31 18:53:46
+21:33:40.891 88 W - 使用IP数据库C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\App_Data\QQWry\qqwry.dat
+
+#Software: iisexpress
+#ProcessID: 12944
+#AppDomain: /LM/W3SVC/41/ROOT-30-131158281542912448
+#FileName: C:\Program Files (x86)\IIS Express\iisexpress.exe
+#BaseDirectory: C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\
+#CurrentDirectory: C:\Program Files (x86)\IIS Express
+#CommandLine: /config:"D:\Users\admin\Documents\IISExpress\config\applicationhost.config"  /site:"AreaTest1" /apppool:"Clr4IntegratedAppPool"
+#ApplicationType: Web
+#CLR: 4.0.30319.42000
+#OS: Windows NT 10.0.10586.0 x64, mwh08/DESKTOP-CLGQRT3
+#CPU: Intel(R) Core(TM) i5-4460 CPU @ 3.20GHz BFEBFBFF000306C3
+#Memory: 3,927M/8,063M
+#Date: 2016-08-16
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+21:35:56.457 89 W - NewLife.Core v5.4.2015.0511 Build 2016-01-31 18:53:46
+21:35:56.676 89 W - 使用IP数据库C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\qqwry.dat
+
+#Software: iisexpress
+#ProcessID: 12944
+#AppDomain: /LM/W3SVC/41/ROOT-31-131158283912774119
+#FileName: C:\Program Files (x86)\IIS Express\iisexpress.exe
+#BaseDirectory: C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\
+#CurrentDirectory: C:\Program Files (x86)\IIS Express
+#CommandLine: /config:"D:\Users\admin\Documents\IISExpress\config\applicationhost.config"  /site:"AreaTest1" /apppool:"Clr4IntegratedAppPool"
+#ApplicationType: Web
+#CLR: 4.0.30319.42000
+#OS: Windows NT 10.0.10586.0 x64, mwh08/DESKTOP-CLGQRT3
+#CPU: Intel(R) Core(TM) i5-4460 CPU @ 3.20GHz BFEBFBFF000306C3
+#Memory: 3,935M/8,063M
+#Date: 2016-08-16
+#字段: 时间 线程ID 线程池Y网页W普通N 线程名 消息内容
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+21:39:53.464 90 W - NewLife.Core v5.4.2015.0511 Build 2016-01-31 18:53:46
+21:39:53.640 90 W - 使用IP数据库C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\App_Data\QQWry\qqwry.dat

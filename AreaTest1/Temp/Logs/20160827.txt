@@ -1,0 +1,290 @@
+http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277584140&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%22f%22%7D%5D%7D&_=1472277137888
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 13:59:44 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277584140&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%22f%22%7D%5D%7D&_=1472277137888
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > 'f'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277594276&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08%22%7D%5D%7D&_=1472277137890
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 13:59:54 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277594276&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08%22%7D%5D%7D&_=1472277137890
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277618202&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%22%7D%5D%7D&_=1472277137895
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:00:18 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277618202&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%22%7D%5D%7D&_=1472277137895
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-24T12'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277622771&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%3A00%22%7D%5D%7D&_=1472277137896
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:00:22 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277622771&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%3A00%22%7D%5D%7D&_=1472277137896
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-24T12:00'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277628612&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%3A00%3A000%22%7D%5D%7D&_=1472277137897
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:00:28 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277628612&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%3A00%3A000%22%7D%5D%7D&_=1472277137897
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-24T12:00:000'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277635835&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%22%7D%5D%7D&_=1472277137898
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:00:35 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277635835&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T12%22%7D%5D%7D&_=1472277137898
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-24T12'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277637580&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T%22%7D%5D%7D&_=1472277137899
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:00:37 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277637580&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24T%22%7D%5D%7D&_=1472277137899
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-24T'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277703439&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24t11%3A50%3A00%22%7D%5D%7D&_=1472277137908
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:01:43 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277703439&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-24t11%3A50%3A00%22%7D%5D%7D&_=1472277137908
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-24t11:50:00'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277712911&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-2411%3A50%3A00%22%7D%5D%7D&_=1472277137910
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:01:52 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277712911&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%222016-08-2411%3A50%3A00%22%7D%5D%7D&_=1472277137910
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '2016-08-2411:50:00'  ExeScalar():从字符串转换日期和/或时间时，转换失败。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277748475&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%2220160824+11.50.00%22%7D%5D%7D&_=1472277137916
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:02:28 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277748475&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%2220160824+11.50.00%22%7D%5D%7D&_=1472277137916
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '20160824 11.50.00'  ExeScalar():从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277754295&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%2220160824+115000%22%7D%5D%7D&_=1472277137917
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:02:34 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277754295&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%2220160824+115000%22%7D%5D%7D&_=1472277137917
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '20160824 115000'  ExeScalar():从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277757511&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%2220160824+1150%22%7D%5D%7D&_=1472277137918
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 14:02:37 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107228054254075804_1472277137872&_search=true&nd=1472277757511&rows=10&page=1&sidx=Id&sord=desc&filters=%7B%22groupOp%22%3A%22AND%22%2C%22rules%22%3A%5B%7B%22field%22%3A%22Registertime%22%2C%22op%22%3A%22gt%22%2C%22data%22%3A%2220160824+1150%22%7D%5D%7D&_=1472277137918
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。<br>MsSql.db.SQL: <br>select count(*) from [Table_TY_Member] where 1=1  AND  Registertime > '20160824 1150'  ExeScalar():从 varchar 数据类型到 datetime 数据类型的转换产生一个超出范围的值。<br>http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:05:24 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:06:07 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery2110006962143452934444_1472303123497&_search=false&nd=1472303123777&rows=10&page=1&sidx=Id&sord=desc&_=1472303123498
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=?
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:11:42 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=?
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[Exception]:未将对象引用设置到对象的实例。:
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)
+   在 CYQ.Data.Orm.SimpleOrmBase.SetInit(Object entityInstance, String tableName, String conn)http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=?
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:41:06 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=?
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[UserPassWordSalt],[TradePassword],[TradePasswordSalt],[TradePassWordExpress]) Values(@UserName,@UserPassWord,@UserPassWordSalt,@TradePassword,@TradePasswordSalt,@TradePassWordExpress) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdf<br>Para: @UserPassWord-> erw<br>Para: @UserPassWordSalt-> asdfewr<br>Para: @TradePassword-> sdfwerwer<br>Para: @TradePasswordSalt-> sdfwrewerhkjhsdf<br>Para: @TradePassWordExpress-> asdflkjlsdfExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=alert
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:45:17 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=alert
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[UserPassWordSalt],[TradePassword],[TradePasswordSalt],[TradePassWordExpress]) Values(@UserName,@UserPassWord,@UserPassWordSalt,@TradePassword,@TradePasswordSalt,@TradePassWordExpress) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdf<br>Para: @UserPassWord-> sdfew<br>Para: @UserPassWordSalt-> asdfewr<br>Para: @TradePassword-> sdfwerwer<br>Para: @TradePasswordSalt-> sdfwrewerhkjhsdf<br>Para: @TradePassWordExpress-> asdflkjlsdfExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=alert
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:50:17 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=alert
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[UserPassWordSalt],[TradePassword],[TradePasswordSalt],[TradePassWordExpress]) Values(@UserName,@UserPassWord,@UserPassWordSalt,@TradePassword,@TradePasswordSalt,@TradePassWordExpress) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdf<br>Para: @UserPassWord-> wer<br>Para: @UserPassWordSalt-> asdfewr<br>Para: @TradePassword-> sdfwerwer<br>Para: @TradePasswordSalt-> sdfwrewerhkjhsdf<br>Para: @TradePassWordExpress-> asdflkjlsdfExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=alert
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/27 21:53:03 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=alert
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[UserPassWordSalt],[TradePassword],[TradePasswordSalt],[TradePassWordExpress]) Values(@UserName,@UserPassWord,@UserPassWordSalt,@TradePassword,@TradePasswordSalt,@TradePassWordExpress) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdfsdfw2<br>Para: @UserPassWord-> rwerwer<br>Para: @UserPassWordSalt-> asdfewr<br>Para: @TradePassword-> sdfwerwer<br>Para: @TradePasswordSalt-> sdfwrewerhkjhsdf<br>Para: @TradePassWordExpress-> asdflkjlsdfExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>

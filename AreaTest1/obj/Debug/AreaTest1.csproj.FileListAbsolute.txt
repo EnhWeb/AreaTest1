@@ -1,0 +1,431 @@
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\AreaTest1.dll.config
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\AreaTest1.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\AreaTest1.pdb
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Antlr3.Runtime.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Cocon90.Lib.Theme.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\CYQ.Data.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\DmgSendEmail.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\EPPlus.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\GoogleQRGenerator.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\GridMvc.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\IRCore.Util.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Jq.Grid.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\log4net.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\LtpCsharp.Common.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\LtpCsharp.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Newtonsoft.Json.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\PagedList.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Helpers.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Mvc.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Razor.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Webpages.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Webpages.Razor.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Viyi.Util.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\WebGrease.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Antlr3.Runtime.pdb
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Cocon90.Lib.Theme.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\CYQ.Data.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\EPPlus.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\log4net.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\LtpCsharp.pdb
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\LtpCsharp.Common.pdb
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Newtonsoft.Json.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\PagedList.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Viyi.Util.pdb
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\Viyi.Util.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Razor.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Webpages.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Webpages.Razor.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Helpers.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\System.Web.Mvc.xml
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\obj\Debug\AreaTest1.dll
+f:\documents\visual studio 2013\Projects\AreaTest1\AreaTest1\obj\Debug\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\AreaTest1.dll.config
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Antlr3.Runtime.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Cocon90.Lib.Theme.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\DmgSendEmail.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\EPPlus.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\GoogleQRGenerator.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\GridMvc.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\IRCore.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Jq.Grid.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\log4net.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\LtpCsharp.Common.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\LtpCsharp.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Newtonsoft.Json.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\PagedList.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Helpers.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Webpages.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Webpages.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Viyi.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\WebGrease.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Cocon90.Lib.Theme.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\CYQ.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\EPPlus.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\log4net.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\LtpCsharp.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\LtpCsharp.Common.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Newtonsoft.Json.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\PagedList.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Viyi.Util.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\Viyi.Util.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Webpages.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Webpages.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Helpers.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Mvc.xml
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\obj\Debug\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\obj\Debug\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Optimization.dll
+C:\Users\mwh08\Desktop\AreaTest1\AreaTest1\bin\System.Web.Optimization.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\AreaTest1.dll.config
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Antlr3.Runtime.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Cocon90.Lib.Theme.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\DmgSendEmail.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\EPPlus.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\GoogleQRGenerator.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\GridMvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\IRCore.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Jq.Grid.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\log4net.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\LtpCsharp.Common.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\LtpCsharp.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Newtonsoft.Json.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\PagedList.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Helpers.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Optimization.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Webpages.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Webpages.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Viyi.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\WebGrease.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Cocon90.Lib.Theme.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\CYQ.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\EPPlus.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\log4net.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\LtpCsharp.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\LtpCsharp.Common.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Newtonsoft.Json.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\PagedList.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Optimization.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Viyi.Util.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\Viyi.Util.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Webpages.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Webpages.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Helpers.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Mvc.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\obj\Debug\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\obj\Debug\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Http.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Http.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\jquery.mobile.mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\MobileID.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\NewLife.Core.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\NewLife.IP.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\NewLife.Core.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\NewLife.Core.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\NewLife.IP.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160805\AreaTest1\bin\NewLife.IP.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\AreaTest1.dll.config
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Antlr3.Runtime.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Cocon90.Lib.Theme.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\DmgSendEmail.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\EPPlus.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\GoogleQRGenerator.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\GridMvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\IRCore.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Jq.Grid.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\jquery.mobile.mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\log4net.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\LtpCsharp.Common.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\LtpCsharp.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\MobileID.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\NewLife.Core.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\NewLife.IP.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Newtonsoft.Json.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\PagedList.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Helpers.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Http.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Optimization.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Webpages.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Webpages.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Viyi.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\WebGrease.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Cocon90.Lib.Theme.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\CYQ.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\EPPlus.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\log4net.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\LtpCsharp.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\LtpCsharp.Common.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\NewLife.Core.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\NewLife.Core.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\NewLife.IP.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\NewLife.IP.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Newtonsoft.Json.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\PagedList.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Http.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Optimization.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Viyi.Util.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\Viyi.Util.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Webpages.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Webpages.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Helpers.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\System.Web.Mvc.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\obj\Debug\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160816\AreaTest1\obj\Debug\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\AreaTest1.dll.config
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Antlr3.Runtime.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Cocon90.Lib.Theme.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\DmgSendEmail.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\EPPlus.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\GoogleQRGenerator.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\GridMvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\IRCore.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Jq.Grid.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\jquery.mobile.mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\log4net.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\LtpCsharp.Common.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\LtpCsharp.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\MobileID.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\NewLife.Core.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\NewLife.IP.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Newtonsoft.Json.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\PagedList.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Helpers.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Http.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Optimization.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Webpages.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Webpages.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Viyi.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\WebGrease.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Cocon90.Lib.Theme.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\CYQ.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\EPPlus.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\log4net.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\LtpCsharp.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\LtpCsharp.Common.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\NewLife.Core.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\NewLife.Core.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\NewLife.IP.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\NewLife.IP.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Newtonsoft.Json.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\PagedList.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Http.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Optimization.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Viyi.Util.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\Viyi.Util.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Webpages.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Webpages.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Helpers.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\System.Web.Mvc.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\obj\Debug\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160818\AreaTest1\obj\Debug\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\AreaTest1.dll.config
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Antlr3.Runtime.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Cocon90.Lib.Theme.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\DmgSendEmail.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\EPPlus.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\GoogleQRGenerator.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\GridMvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\IRCore.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\jquery.mobile.mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\log4net.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\LtpCsharp.Common.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\LtpCsharp.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\MobileID.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\NewLife.Core.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Newtonsoft.Json.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\PagedList.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Helpers.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Http.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Optimization.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Webpages.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Webpages.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Viyi.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\WebGrease.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Cocon90.Lib.Theme.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\CYQ.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\EPPlus.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\log4net.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\LtpCsharp.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\LtpCsharp.Common.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\NewLife.Core.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\NewLife.Core.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Newtonsoft.Json.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\PagedList.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Http.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Optimization.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Viyi.Util.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\Viyi.Util.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Webpages.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Webpages.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Helpers.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\System.Web.Mvc.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\obj\Debug\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160819\AreaTest1\obj\Debug\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\AreaTest1.dll.config
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\AreaTest1.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Antlr3.Runtime.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Cocon90.Lib.Theme.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\CYQ.Data.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\DmgSendEmail.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\EPPlus.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\GoogleQRGenerator.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\GridMvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\IRCore.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\jquery.mobile.mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\log4net.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\LtpCsharp.Common.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\LtpCsharp.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\MobileID.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\NewLife.Core.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Newtonsoft.Json.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\PagedList.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Helpers.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Http.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Mvc.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Optimization.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Webpages.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Webpages.Razor.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Viyi.Util.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\WebGrease.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Cocon90.Lib.Theme.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\CYQ.Data.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\EPPlus.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\log4net.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\LtpCsharp.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\LtpCsharp.Common.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\NewLife.Core.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\NewLife.Core.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Newtonsoft.Json.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\PagedList.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Http.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Optimization.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Viyi.Util.pdb
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\Viyi.Util.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Webpages.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Webpages.Razor.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Helpers.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\System.Web.Mvc.xml
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\obj\Debug\AreaTest1.csprojResolveAssemblyReference.cache
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\obj\Debug\AreaTest1.dll
+C:\Users\mwh08\Desktop\AreaTest1.20160910.1516\AreaTest1\obj\Debug\AreaTest1.pdb

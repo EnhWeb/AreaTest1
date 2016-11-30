@@ -1,0 +1,2172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Viyi.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Viyi.Util.Codec.Base64Tool">
+            <summary>
+            通过对byte[]和string扩展方法实现对数据按BASE64算法进行编码或解码。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Encode(System.Byte[],System.Boolean)">
+            <summary>
+            将2进制数据进行BASE64编码，得到编码文本。
+            </summary>
+            <param name="data">源数据</param>
+            <param name="isBreakLines">是否在编码结果中每76个字符使用换行符进行分隔。</param>
+            <returns>BASE64编码文本</returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Encode(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将2进制数据中的一部分进行BASE64编码，得到编码文本
+            </summary>
+            <param name="data">源数据</param>
+            <param name="start">需要编码的数据起始索引</param>
+            <param name="length">需要编码的数据长度</param>
+            <param name="isBreakLines">是否在编码结果中每76个字符使用换行符进行分隔。</param>
+            <returns>BASE64编码文本</returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Decode(System.String)">
+            <summary>
+            将BASE64编码文本进行解码，得到原来的2进制数据
+            </summary>
+            <param name="base64">编码文本</param>
+            <returns>解码出来的2进制数据</returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Encode(System.String,System.Text.Encoding,System.Boolean)">
+            <summary>
+            将字符串进行BASE64编码，得到编码文本。
+            </summary>
+            <param name="source">需要编码的字符串</param>
+            <param name="encoding">编码前将源字符串转换成2进制数据的编码方法</param>
+            <param name="isBreakLines">是否在编码结果中每76个字符使用换行符进行分隔。</param>
+            <returns>BASE64编码文本</returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Encode(System.String,System.String,System.Boolean)">
+            <summary>
+            将字符串进行BASE64编码，得到编码文本。
+            </summary>
+            <param name="source">需要编码的字符串</param>
+            <param name="encodingName">编码前将源字符串转换成2进制数据的编码方法</param>
+            <param name="isBreakLines">是否在编码结果中每76个字符使用换行符进行分隔。</param>
+            <returns>BASE64编码文本</returns>
+            <exception cref="T:System.ArgumentException">encoding不是有效的代码页名称</exception>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Decode(System.String,System.Text.Encoding)">
+            <summary>
+            将BASE64编码文本进行解码，并将得到的二进制数据按 <c>encoding</c> 指定的编码生成字符串
+            </summary>
+            <param name="base64">BASE64编码数据</param>
+            <param name="encoding">原始数据字符串的编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Base64Tool.Base64Decoee(System.String,System.String)">
+            <summary>
+            将BASE64编码文本进行解码，并将得到的二进制数据按 <c>encoding</c> 指定的编码生成字符串
+            </summary>
+            <param name="base64">BASE64编码数据</param>
+            <param name="encodingName">原始数据字符串的编码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Viyi.Util.Codec.Hex">
+            <summary>
+            通过对string, byte[], ushort[], uint[], ulong[]等数据类型的扩展方法，
+            实现数据和十六进制字符串之间的转换。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexDecode(System.String)">
+            <summary>
+            把使用16进制表示数据的字符串转换成对应的2进制数据（字节组表示）
+            </summary>
+            <param name="me">16进制</param>
+            <returns>2进制数据</returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.Byte[])">
+            <summary>
+            把字符数组表示的2进制数据转换成16进制编码的字符串。
+            转换结果中每个字节用2位<c>HEX</c>表示。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            把字符数组表示的2进制数据中的一部分转换成16进制编码的字符串。
+            转换结果中每个字节用2位<c>HEX</c>表示。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="start">要转换的数据起始索引</param>
+            <param name="length">要转换的数据长度</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"><c>length</c>大于<c>Int32.MaxValue / 2</c>时</exception>
+            <remarks>如果转换出错（比如源数据为<c>null</c>索引位置不正确，长度不正确等），返回null；
+            如果<c>length</c>为<c>0</c>或源数据长度为<c>0</c>，返回<c>string.Empty</c>。</remarks>
+            <remarks>在<c>start</c>和<c>length</c>均有效的情况下，如果<c>start + length</c>大于数据长度，
+            会转换从<c>start</c>开始到数据数组结束的数据，不视为出错（不返回null）</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.UInt16[],System.Boolean)">
+            <summary>
+            将用<c>ushort[]</c>表示的2进制数据转换为16进制字符串。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="isAsByteArray">源数据中每个<c>ushort</c>是否仅包含8位数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <remarks>如果<c>isAsByteArray</c>为<c>true</c>，
+            每个<c>ushort</c>仅8位数据有效，转换为2位<c>HEX</c>。
+            如果<c>isAsByteArray</c>为<c>false</c>，
+            每个<c>ushort</c>含16位有效数据，转换为4位<c>HEX</c>。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.UInt16[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将用<c>ushort[]</c>表示的2进制数据中的一部分转换为16进制字符串。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="start">要转换的数据起始索引</param>
+            <param name="length">要转换的数据长度</param>
+            <param name="isAsByteArray">源数据中每个<c>ushort</c>是否仅包含8位数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <remarks>如果<c>isAsByteArray</c>为<c>true</c>，
+            每个<c>ushort</c>仅8位数据有效，转换为2位<c>HEX</c>。
+            如果<c>isAsByteArray</c>为<c>false</c>，
+            每个<c>ushort</c>含16位有效数据，转换为4位<c>HEX</c>。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.UInt32[],System.Boolean)">
+            <summary>
+            将用<c>uint[]</c>表示的2进制数据转换为16进制字符串。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="isAsByteArray">源数据中每个<c>uint</c>是否仅包含8位数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <remarks>如果<c>isAsByteArray</c>为<c>true</c>，
+            每个<c>uint</c>仅8位数据有效，转换为2位<c>HEX</c>。
+            如果<c>isAsByteArray</c>为<c>false</c>，
+            每个<c>uint</c>含16位有效数据，转换为4位<c>HEX</c>。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.UInt32[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将用<c>uint[]</c>表示的2进制数据中的一部分转换为16进制字符串。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="start">要转换的数据起始索引</param>
+            <param name="length">要转换的数据长度</param>
+            <param name="isAsByteArray">源数据中每个<c>uint</c>是否仅包含8位数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <remarks>如果<c>isAsByteArray</c>为<c>true</c>，
+            每个<c>uint</c>仅8位数据有效，转换为2位<c>HEX</c>。
+            如果<c>isAsByteArray</c>为<c>false</c>，
+            每个<c>uint</c>含16位有效数据，转换为4位<c>HEX</c>。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.UInt64[],System.Boolean)">
+            <summary>
+            将用<c>ulong[]</c>表示的2进制数据转换为16进制字符串。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="isAsByteArray">源数据中每个<c>ulong</c>是否仅包含8位数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <remarks>如果<c>isAsByteArray</c>为<c>true</c>，
+            每个<c>ulong</c>仅8位数据有效，转换为2位<c>HEX</c>。
+            如果<c>isAsByteArray</c>为<c>false</c>，
+            每个<c>ulong</c>含16位有效数据，转换为4位<c>HEX</c>。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.UInt64[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将用<c>ulong[]</c>表示的2进制数据中的一部分转换为16进制字符串。
+            </summary>
+            <param name="me">源2进制数据</param>
+            <param name="start">要转换的数据起始索引</param>
+            <param name="length">要转换的数据长度</param>
+            <param name="isAsByteArray">源数据中每个<c>ulong</c>是否仅包含8位数据</param>
+            <returns>编码结果（16进制字符串）</returns>
+            <remarks>如果<c>isAsByteArray</c>为<c>true</c>，
+            每个<c>ulong</c>仅8位数据有效，转换为2位<c>HEX</c>。
+            如果<c>isAsByteArray</c>为<c>false</c>，
+            每个<c>ulong</c>含16位有效数据，转换为4位<c>HEX</c>。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.String,System.Text.Encoding)">
+            <summary>
+            将字符串按指定的编码转换成字节数据之后再进行HEX编码。
+            </summary>
+            <param name="me">源字符串</param>
+            <param name="encoding">编码对象</param>
+            <returns>十六进制表示的编码值。
+            如果<c>me</c>为<c>null</c>，返回<c>null</c>；
+            如果<c>me</c>为空字符串，返回<c>string.Empty</c>。</returns>
+            <seealso cref="T:System.Text.Encoding"/>
+        </member>
+        <member name="M:Viyi.Util.Codec.Hex.HexEncode(System.String,System.String)">
+            <summary>
+            将字符串按指定的编码转换成字节数据之后再进行HEX编码。
+            </summary>
+            <param name="me">源字符串</param>
+            <param name="encoding">编码名称（代码页名称）</param>
+            <returns>十六进制表示的编码值。
+            如果<c>me</c>为<c>null</c>，返回<c>null</c>；
+            如果<c>me</c>为空字符串，返回<c>string.Empty</c>。</returns>
+            <exception cref="T:System.ArgumentException">name不是有效的代码页名称，或平台不支持name所指的代码页。
+            <see cref="M:System.Text.Encoding.GetEncoding(System.String)"/></exception>
+        </member>
+        <member name="T:Viyi.Util.Collections.DictionaryIndexer`2">
+            <summary>
+            通过索引运算符 <c>[]</c> 添加、修改和获取字典数据，避免异常
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+        </member>
+        <member name="T:Viyi.Util.Config.AppConfig">
+            <summary>
+            封装<see cref="T:System.Configuration.Configuration"/>，
+            提供对配置项的便捷操作方法。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.OpenExeConfiguration(System.String,System.Boolean)">
+            <summary>
+            根据指定的EXE文件，打开对应的配置文件。
+            </summary>
+            <param name="exePath">EXE文件路径</param>
+            <param name="isReadOnly">指示该配置是否为只读，默认为<c>false</c></param>
+            <returns>成功打开配置，返回<c>AppConfig</c>对象；否则返回<c>null</c>。</returns>
+            <remarks>如果<c>isReadOnly</c>被指定为<c>true</c>，
+            则调用所有具有写入功能的方法时都会抛出异常。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.OpenConfiguration(System.String,System.Boolean)">
+            <summary>
+            打开指定名称的配置文件。
+            </summary>
+            <param name="configFilePath">配置文件路径</param>
+            <param name="isReadOnly">指示该配置是否为只读，默认为<c>false</c></param>
+            <returns>成功打开配置，返回<c>AppConfig</c>对象；否则返回<c>null</c>。</returns>
+            <remarks>如果<c>isReadOnly</c>被指定为<c>true</c>，
+            则调用所有具有写入功能的方法时都会抛出异常。</remarks>
+        </member>
+        <member name="P:Viyi.Util.Config.AppConfig.Configuration">
+            <summary>
+            获取载入的配置对象。
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.Config.AppConfig.IsSaveImmediately">
+            <summary>
+            设置/获取是否在改变了配置值之后立即保存到配置文件中
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.GetConnectionString(System.String)">
+            <summary>
+            获取配置在<c>connectionStrings</c>段中指定名称的连接字符串。
+            </summary>
+            <param name="name">配置名称</param>
+            <returns>配置值</returns>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.SetConnectionString(System.String,System.String)">
+            <summary>
+            在<c>connectionStrings</c>段中设置连接字符串。
+            </summary>
+            <param name="name">配置名称</param>
+            <param name="value">配置值</param>
+            <exception cref="T:System.InvalidOperationException">如果创建当前<c>AppConfig</c>
+            对象时<c>isReadOnly</c>为true，则会引发该异常。</exception>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.GetAppSetting(System.String)">
+            <summary>
+            获取配置在<c>appSettings</c>段中指定配置键对应的配置值。
+            </summary>
+            <param name="key">配置键</param>
+            <returns>配置值</returns>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.SetAppSetting(System.String,System.String)">
+            <summary>
+            在<c>appSettings</c>段中写入配置值。
+            </summary>
+            <param name="key">配置键</param>
+            <param name="value">配置值</param>
+            <exception cref="T:System.InvalidOperationException">如果创建当前<c>AppConfig</c>
+            对象时<c>isReadOnly</c>为true，则会引发该异常。</exception>
+        </member>
+        <member name="P:Viyi.Util.Config.AppConfig.Item(System.String)">
+            <summary>
+            以对象索引方式实现的，
+            <see cref="M:Viyi.Util.Config.AppConfig.GetAppSetting(System.String)"/>和<see cref="M:Viyi.Util.Config.AppConfig.SetAppSetting(System.String,System.String)"/>
+            的快捷调用方式。
+            </summary>
+            <param name="key">配置键</param>
+            <returns>配置值</returns>
+            <exception cref="T:System.InvalidOperationException">如果创建当前
+            <c>AppConfig</c>对象时<c>isReadOnly</c>为true，则设置值时会引发该异常。</exception>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.Save">
+            <summary>
+            保存已经修改的配置
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Config.AppConfig.OnUpdate">
+            <summary>
+            更新配置时发生
+            </summary>
+        </member>
+        <member name="T:Viyi.Util.Config.IniConfig">
+            <summary>
+            提供对INI配置文件的操作。
+            </summary>
+            <remarks>通过Win32 API中的<c>WritePrivateProfileString</c>
+            和<c>GetPrivateProfileString</c>实现。
+            这个类是线程不安全的。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Config.IniConfig.#ctor(System.String,System.Boolean)">
+            <summary>
+            构造一个<c>IniConfig</c>对象处理指定的配置文件。
+            </summary>
+            <param name="filename">INI配置文件路径</param>
+            <param name="isReadOnly">指示该配置是否为只读，默认为false</param>
+            <remarks>如果指定的配置文件不存在，会自动创建一个。
+            如果没有权限对指定的配置文件进行读写操作，抛出IOException</remarks>
+        </member>
+        <member name="M:Viyi.Util.Config.IniConfig.Get(System.String,System.String)">
+            <summary>
+            按指定的配置节和选项名称获取选项值。
+            </summary>
+            <param name="section">配置节</param>
+            <param name="name">选项名称</param>
+            <returns>选项值，如果获取失败将返回<c>string.Empty</c>，而不是<c>null</c>。</returns>
+            <remarks>如果需要转换为其它数据类型的值，
+            可以使用<c>string</c>扩展的<c>ToXXXX</c>系列方法。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Config.IniConfig.Set(System.String,System.String,System.String)">
+            <summary>
+            按指定的配置节和选项名称设置选项值。
+            </summary>
+            <param name="section">配置节</param>
+            <param name="name">选项名称</param>
+            <param name="value">值</param>
+            <returns>true表示设置成功，false表示设置失败</returns>
+        </member>
+        <member name="P:Viyi.Util.Config.IniConfig.Item(System.String,System.String)">
+            <summary>
+            以索引方式实现的<c>Get(string, string)</c>
+            和<c>Set(string, string, string)</c>
+            的便捷调用方式。
+            </summary>
+            <param name="section">配置节</param>
+            <param name="name">选项名称</param>
+            <returns>选项值，参考<see cref="M:Viyi.Util.Config.IniConfig.Get(System.String,System.String)"/>
+            和<see cref="M:Viyi.Util.Config.IniConfig.Set(System.String,System.String,System.String)"/></returns>
+        </member>
+        <member name="T:Viyi.Util.Config.ReadOnlyableConfig">
+            <summary>
+            为提供只读的配置类提供基本的数据支持。
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.Config.ReadOnlyableConfig.IsReadOnly">
+            <summary>
+            获取当前配置对象是否只读。
+            只读的配置对象不能使用其设置选项的方法。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Config.ReadOnlyableConfig.ThrowIfReadOnly">
+            <summary>
+            检查是否只读，如果是只读，抛出异常
+            </summary>
+        </member>
+        <member name="T:Viyi.Util.Data.Converter.DataTableColumnConverter">
+            <summary>
+            <c>DataTable</c>列数据转换器基类，完成了对数据列的处理。
+            其子类只需要实现对数据的转换即可。
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.Data.Converter.DataTableColumnConverter.IsDeleteOriginalColumn">
+            <summary>
+            判断是否删除源列
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.Data.Converter.DataTableColumnConverter.DataTable">
+            <summary>
+            数据表
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.DataTableColumnConverter.Convert(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            将指定列的数据转换为其它格式表示
+            如果newColumnName为null，则使用新的值替换旧的值（新列换旧列）
+            否则为新值创建新的列
+            </summary>
+            <param name="data">数据表</param>
+            <param name="columnName">原列名称</param>
+            <param name="newColumnName">新列名称</param>
+            <remarks>如果新列名为<c>null</c>、<c>string.Empty</c>或仅包含空白字符，
+            则转换后的新列会被用来代替源列，源列数据会被丢弃。</remarks>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.DataTableColumnConverter.GenerateColumn(System.Data.DataColumn,System.String)">
+            <summary>
+            根据源数据列和新列名，产生新列
+            </summary>
+            <param name="originColumn">源列</param>
+            <param name="newColumnName">新列名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.DataTableColumnConverter.Convert(System.Data.DataRow,System.Int32,System.Int32)">
+            <summary>
+            逐行转换数据
+            </summary>
+            <param name="row">数据行</param>
+            <param name="columnIndex">源列索引</param>
+            <param name="newColumnIndex">新列索引</param>
+        </member>
+        <member name="T:Viyi.Util.Data.Converter.EnumColumnConverter">
+            <summary>
+            用于将列的数据按指定的枚举类型，将数据转换成枚举名称。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.EnumColumnConverter.#ctor(System.Type)">
+            <summary>
+            使用一个枚举类型构造<c>EnumColumnConverter</c>对象。
+            </summary>
+            <param name="type">枚举类型</param>
+            <exception cref="T:System.ArgumentNullException"><c>type</c>为<c>null</c></exception>
+            <exception cref="T:System.InvalidCastException"><c>type</c>不是一个枚举类型</exception>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.EnumColumnConverter.Convert(System.Data.DataRow,System.Int32,System.Int32)">
+            <summary>
+            将源列数据，按枚举值，转换为枚举名称，并置入新列。
+            </summary>
+            <param name="row">数据行</param>
+            <param name="columnIndex">源列索引</param>
+            <param name="newColumnIndex">新列索引</param>
+        </member>
+        <member name="T:Viyi.Util.Data.Converter.FormatColumnConverter">
+            <summary>
+            用于将指定列的数据，按指定的字符串格式，转换成字符串。
+            如：对日期字段按{0:yyyy-MM-dd}格式进行转换可以日期输出为2012-12-21这样的格式
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.FormatColumnConverter.#ctor(System.String)">
+            <summary>
+            使用一个格式来构造<c>FormatClumnConverter</c>。
+            </summary>
+            <param name="formatPattern">格式，参阅<see cref="M:System.String.Format(System.String,System.Object[])"/></param>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.FormatColumnConverter.GenerateColumn(System.Data.DataColumn,System.String)">
+            <summary>
+            根据源列创建一个新列用于保存转换结果。新列数据类型为<c>string</c>
+            </summary>
+            <param name="originColumn">源列</param>
+            <param name="newColumnName">新列名</param>
+            <returns>创建的新列</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.FormatColumnConverter.Convert(System.Data.DataRow,System.Int32,System.Int32)">
+            <summary>
+            将源列数据，按构造时指定的格式，产生新列的<c>string</c>类型数据。
+            </summary>
+            <param name="row">数据行</param>
+            <param name="columnIndex">源列索引</param>
+            <param name="newColumnIndex">新列索引</param>
+        </member>
+        <member name="T:Viyi.Util.Data.Converter.IDataTableColumnConverter">
+            <summary>
+            <c>DataTable</c>列数据转换器接口。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Data.Converter.IDataTableColumnConverter.Convert(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            将数据表中某列的数据，按一定算法（由实体类决定）转换并将结果置于新列。
+            </summary>
+            <param name="data">数据表</param>
+            <param name="columnName">原列名</param>
+            <param name="newColumnName">新列名</param>
+            <remarks>如果新列名为<c>null</c>、<c>string.Empty</c>或仅包含空白字符，
+            则转换后的新列会被用来代替源列，源列数据会被丢弃。</remarks>
+        </member>
+        <member name="T:Viyi.Util.Data.DataRowUtil">
+            <summary>
+            对<see cref="T:System.Data.DataRow"/>进行扩展，以方便从<c>DataRow</c>对象获取各种类型的数据。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.IsContainsColumn(System.Data.DataRow,System.String)">
+            <summary>
+            判断DataRow中是否包含指定名称的列。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnName">列名称</param>
+            <returns>如果DataRow所在DataTable包含指定名称的列，返回true，否则返回false。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.ObjectValue(System.Data.DataRow,System.String,System.Object)">
+            <summary>
+            从DataRow中取出指定列的数据，并把它当作object对象返回。
+            如果取出的数据为DbNull，返回指定的默认值。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnName">列名称</param>
+            <param name="defaultValue">代替<c>DbNull</c>的默认值</param>
+            <returns>返回取出的数据，如果是<c>DbNull</c>，则用<c>defaultValue</c>代替。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.ObjectValue(System.Data.DataRow,System.Int32,System.Object)">
+            <summary>
+            从DataRow中取出指定列的数据，并把它当作object对象返回。
+            如果取出的数据为DbNull，返回指定的默认值。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnIndex">列索引</param>
+            <param name="defaultValue">代替<c>DbNull</c>的默认值</param>
+            <returns>返回取出的数据，如果是<c>DbNull</c>，则用<c>defaultValue</c>代替。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.StringValue(System.Data.DataRow,System.String)">
+            <summary>
+            将DataRow中指定列的数据转换为字符串值返回。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnName">列名称</param>
+            <returns>返回从数据转换而来的<c>string</c>对象。如果源数据是<c>DbNull</c>，
+            则返回null</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.StringValue(System.Data.DataRow,System.Int32)">
+            <summary>
+            将DataRow中指定列的数据转换为字符串值返回。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnIndex">列索引</param>
+            <returns>返回从数据转换而来的<c>string</c>对象。如果源数据是<c>DbNull</c>，
+            则返回null</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.Format(System.Data.DataRow,System.String,System.String)">
+            <summary>
+            获取由DataRow中指定列的数据按指定的格式转换得到的为字符串。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnName">列名称</param>
+            <param name="pattern">格式模板</param>
+            <returns>格式化结果。如果源数据是<c>DbNull</c>则返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.Format(System.Data.DataRow,System.Int32,System.String)">
+            <summary>
+            获取由DataRow中指定列的数据按指定的格式转换得到的为字符串。
+            </summary>
+            <param name="row">DataRow对象</param>
+            <param name="columnIndex">列索引</param>
+            <param name="pattern">格式模板</param>
+            <returns>格式化结果。如果源数据是<c>DbNull</c>则返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.Value``1(System.Data.DataRow,System.String)">
+            <summary>
+            使用Convert将DataRow指定Key的值转换为模板类型的数值，如果转换失败，返回该类型的默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="row">DataRow对象</param>
+            <param name="columnName">列名称</param>
+            <returns>转换后的值，若转换失败返回类型<c>default(T)</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.Value``1(System.Data.DataRow,System.Int32)">
+            <summary>
+            使用Convert将DataRow指定Key的值转换为模板类型的数值，如果转换失败，返回该类型的默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="row">DataRow对象</param>
+            <param name="columnIndex">列索引</param>
+            <returns>转换后的值，若转换失败返回类型<c>default(T)</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.Value``1(System.Data.DataRow,System.String,``0)">
+            <summary>
+            使用Convert将DataRow指定的Key值转换为模板类型的数值，如果转换失败，返回指定的默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="row">DataRow对象</param>
+            <param name="columnName">列名称</param>
+            <param name="defaultValue">转换失败时用于返回的默认值</param>
+            <returns>转换后的值，若转换失败返回类型<c>defaultValue</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.Value``1(System.Data.DataRow,System.Int32,``0)">
+            <summary>
+            使用Convert将DataRow指定的Key值转换为模板类型的数值，如果转换失败，返回指定的默认值
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="row">DataRow对象</param>
+            <param name="columnIndex">列索引</param>
+            <param name="defaultValue">转换失败时用于返回的默认值</param>
+            <returns>转换后的值，若转换失败返回类型<c>defaultValue</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.ToDictionary(System.Data.DataRow)">
+            <summary>
+            将DataRow中的数据封装成一个<c>IDictionary</c>。
+            </summary>
+            <param name="me">DataRow对象</param>
+            <returns>封装得到的<c>IDictionary&lt;string, object&gt;</c>对象。</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.ToNameValueCollection(System.Data.DataRow,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            将DataRow对象转换成一个NameValueCollection对象
+            </summary>
+            <param name="me">DataRow对象</param>
+            <param name="formater">格式模板，通过列名查找，大小写不敏感；可以为<c>null</c></param>
+            <returns>封装后的NameValueCollection</returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.ToModel``1(System.Data.DataRow,System.Boolean)">
+            <summary>
+            将 <c>DataRow</c> 对象转换为指定类型的模型对象，字段名和对象属性名会进行对应（不区分大小写）。
+            </summary>
+            <typeparam name="T">模型类型</typeparam>
+            <param name="dataRow"></param>
+            <param name="isThrowOnError">指定不能为模型属性赋值时（如类型不兼容），是否抛出异常</param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataRowUtil.ToModel(System.Data.DataRow,System.Object,System.Boolean)">
+            <summary>
+            将 <c>DataRow</c> 对象所包含的值赋给指定的对象，字段名和对象属性名会进行对应（不区分大小写）。
+            </summary>
+            <param name="dataRow"></param>
+            <param name="object"></param>
+            <param name="isThrowOnError">指定不能为模型属性赋值时（如类型不兼容），是否抛出异常</param>
+            <returns></returns>
+        </member>
+        <member name="T:Viyi.Util.Data.DataTableUtil">
+            <summary>
+            对<see cref="T:System.Data.DataTable"/>进行扩展，以方便的处理数据表中的列
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.Data.DataTableUtil.MapEnum``1(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            根据枚举将单元格值转换为枚举名称。
+            如果newColumnName为null，则使用新的值替换旧的值（新列换旧列）
+            否则为新值创建新的列
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dataTable"></param>
+            <param name="columnName"></param>
+            <param name="newColumnName"></param>
+        </member>
+        <member name="M:Viyi.Util.Data.DataTableUtil.FormatColumn(System.Data.DataTable,System.String,System.String,System.String)">
+            <summary>
+            根据指定的格式字符串，将列数据转换成字符串。
+            格式模板规则与string.Format()的格式模板规则相同。
+            </summary>
+            <param name="dataTable"></param>
+            <param name="formatPattern"></param>
+            <param name="columnName"></param>
+            <param name="newColumnName"></param>
+        </member>
+        <member name="M:Viyi.Util.Data.DataTableUtil.ToModels``1(System.Data.DataTable)">
+            <summary>
+            将 DataTable 转换为指定的模型集
+            </summary>
+            <param name="dataTable"></param>
+            <typeparam name="TModel"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.Data.DataTableUtil.Extends(System.Data.DataTable,System.Action{System.Data.DataRow},System.String[])">
+            <summary>
+            扩展或处理 DataTable 的数据行，将行内数据进行处理修改或者填充到新列。
+            </summary>
+            <param name="table"></param>
+            <param name="extender"></param>
+            <param name="newColumns"></param>
+        </member>
+        <member name="M:Viyi.Util.Data.DataTableUtil.Extends(System.Data.DataTable,System.Action{System.Data.DataRow},System.Collections.Generic.IEnumerable{System.Data.DataColumn})">
+            <summary>
+            扩展或处理 DataTable 的数据行，将行内数据进行处理修改或者填充到新列。
+            </summary>
+            <param name="table"></param>
+            <param name="extender"></param>
+            <param name="newColumns"></param>
+        </member>
+        <member name="T:Viyi.Util.DateTimeUtil">
+            <summary>
+            日期和时间扩展方法工具类
+            </summary>
+            <example>
+            <code>
+            string s1 = DateTime.Now.Format();
+            string s2 = DateTime.Now.FormatTime();
+            string s3 = DateTime.Today.FormatDate();
+            string s4 = DateTime.Now.FormatRfc3339();
+            string s5 = DateTime.Now.FormatRfc3339(DateTimeKind.Utc);
+            </code>
+            </example>
+        </member>
+        <member name="P:Viyi.Util.DateTimeUtil.Formats">
+            <summary>
+            全局格式
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.DateTimeUtil.FormatRfc3339(System.DateTime,System.DateTimeKind)">
+            <summary>
+            <p>根据 RFC 3339 规定，得到表示日期的字符串。</p>
+            <p>结果示例</p>
+            <ul>
+                <li>2014-10-20T01:23:45Z</li>
+                <li>2014-10-20T09:23:45+08:00</li>
+            </ul>
+            </summary>
+            <param name="value">日期时间值</param>
+            <param name="defaultKind">当 <paramref name="value"/>
+            的 <c>Kind</c> 属性值是 <see cref="F:System.DateTimeKind.Unspecified" /> 时，
+            用 <paramref name="defaultKind" /> 代替。
+            </param>
+            <returns></returns>
+            <remark>
+            如果 <c>value.Kind == DateTimeKind.Unspecified</c>，默认格式化结果不符合 RFC3339 标准，
+            没有后缀的 <c>Z</c> 或时区偏移量。而通常从数据库获取的日期都是没有指定 <c>Kind</c> 的。
+            这种情况下，一般应该使用 <c>DateTimeKind.Local</c> 作为 <c>DateTimeKind</c>。
+            </remark>
+        </member>
+        <member name="M:Viyi.Util.DateTimeUtil.Format(System.DateTime)">
+            <summary>
+            根据全局日期时间格式，格式指定日期对象得到格式化后的字符串
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.DateTimeUtil.FormatDate(System.DateTime)">
+            <summary>
+            根据全局日期格式，格式化指定日期对象得到格式化后的字符串
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.DateTimeUtil.FormatTime(System.DateTime)">
+            <summary>
+            根据全局时间格式，格式化指定时间对象得到格式化后的字符串
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.DateTimeUtil.ToJavaMilliseconds(System.DateTime,System.TimeZoneInfo)">
+            <summary>
+            计算从1970年1月1日到指定日期的毫秒数数，与 Java 中 <c>java.util.Date.getTime()</c> 返回的值相同。
+            </summary>
+            <param name="value"></param>
+            <param name="timezone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.DateTimeUtil.FromJavaMilliseconds(System.Int64,System.TimeZoneInfo)">
+            <summary>
+            根据 Java 中表示时间和 <c>long</c> 型数据，恢复成 <see cref="T:System.DateTime" /> 类型数据。
+            </summary>
+            <param name="value"></param>
+            <param name="timezone"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Viyi.Util.DateTimeUtil.IFormats">
+            <summary>
+            格式设置接口
+            </summary>
+        </member>
+        <member name="T:Viyi.Util.DateTimeUtil.DefinedFormat">
+            <summary>
+            日期时间格式参数类
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.DateTimeUtil.DefinedFormat.DateTime">
+            <summary>
+            默认的，含时间的日期格式，精确到秒
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.DateTimeUtil.DefinedFormat.Date">
+            <summary>
+            日期格式，不含时间
+            </summary>
+        </member>
+        <member name="P:Viyi.Util.DateTimeUtil.DefinedFormat.Time">
+            <summary>
+            时间格式，不含日期部分，精确到秒
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.EnumUtil.Enumerate(System.Type)">
+            <summary>
+            将枚举类型的各项转换成一个可遍历的序列
+            </summary>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.EnumUtil.Enumerate``1">
+            <summary>
+            将枚举类型的各项转换成一个可遍历的序列
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.EnumUtil.Enumerate``1(System.Type)">
+            <summary>
+            将枚举类型的各项转换成一个可遍历的序列
+            </summary>
+            <typeparam name="TUnderlying"></typeparam>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.EnumUtil.Enumerate``2">
+            <summary>
+            将枚举类型的各项转换成一个可遍历的序列
+            </summary>
+            <typeparam name="TEnum"></typeparam>
+            <typeparam name="TUnderlying"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Viyi.Util.EnumUtil.ToNameValueCollection(System.Type,System.Boolean)">
+            <summary>
+            将枚举类型的各项转换成一个 <c>NameValueCollection</c>，
+            由参数 <c>isNameAsKey</c> 决定其 Key 是枚举名称还是枚举数值。
+            </summary>
+            <param name="enumType"></param>
+            <param name="isNameAsKey"></param>
+            <remark>当 <c>isNameAsKey == false</c> 时，可能会出现重复的 Key，
+            这种情况下应该谨慎使用生成的 <c>NameValueCollection</c>，
+            可以使用其 <c>GetValues().First()</c> 来获取唯一值则不是逗号分隔的所有值。</remark>
+            <returns></returns>
+        </member>
+        <member name="T:Viyi.Util.ObjectUtil">
+            <summary>
+            包含一系列对<c>object</c>进行扩展的方法的类。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.As``1(System.Object,``0)">
+            <summary>
+            将object对象当作指定数据类型进行处理。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>返回转换引用类型之后的值，如果不能转换为指定引用类型，
+            返回<c>defaultValue</c></returns>
+            <remarks>与as关键字的区别在于，<c>As</c>方法可以处理结构。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.As``1(System.Object)">
+            <summary>
+            将object对象当作指定数据类型进行处理。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="object">源数据</param>
+            <returns>返回转换引用类型之后的值，如果不能转换为指定引用类型，
+            返回<c>default(T)</c></returns>
+            <remarks>与as关键字的区别在于，<c>As</c>方法可以处理结构。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ConvertTo``1(System.Object,``0)">
+            <summary>
+            将object对象转换为指定数据类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>通过<c>System.Convert</c>将源数据转换为指定类型的数据，
+            如果转换不成功，返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ConvertTo``1(System.Object)">
+            <summary>
+            将object对象转换为指定数据类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="object">源数据</param>
+            <returns>通过<c>System.Convert</c>将源数据转换为指定类型的数据，
+            如果转换不成功，返回<c>default(T)</c></returns>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToInt32(System.Object,System.Int32)">
+            <summary>
+            将object对象转换为Int32类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToInt64(System.Object,System.Int64)">
+            <summary>
+            将object对象转换为Int64类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToInt16(System.Object,System.Int16)">
+            <summary>
+            将object对象转换为Int16类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToUInt32(System.Object,System.UInt32)">
+            <summary>
+            将object对象转换为UInt32类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToUInt64(System.Object,System.UInt64)">
+            <summary>
+            将object对象转换为UInt64类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToUInt16(System.Object,System.UInt16)">
+            <summary>
+            将object对象转换为UInt16类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToByte(System.Object,System.Byte)">
+            <summary>
+            将object对象转换为Byte类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToSByte(System.Object,System.SByte)">
+            <summary>
+            将object对象转换为SByte类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToDecimal(System.Object,System.Decimal)">
+            <summary>
+            将object对象转换为Decimal类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToFloat(System.Object,System.Single)">
+            <summary>
+            将object对象转换为Float类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToDouble(System.Object,System.Double)">
+            <summary>
+            将object对象转换为Double类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="M:Viyi.Util.ObjectUtil.ToBoolean(System.Object,System.Boolean)">
+            <summary>
+            将object对象转换为Boolean类型的数据。
+            </summary>
+            <param name="object">源数据</param>
+            <param name="defaultValue">缺省值</param>
+            <returns>转换结果数据，如果转换不成功，返回<c>defaultValue</c></returns>
+            <remarks>与<c>ConverTo</c>相比，明确指定类型的转换效率更高。</remarks>
+        </member>
+        <member name="T:Viyi.Util.ByteArrayUtil">
+            <summary>
+            对若干基本数据类型及其对应的数组类型进行扩展，提供将这些类型的数据转换
+            为<c>byte[]</c>的扩展方法。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt16(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串中指定的2个字节转换为一个<c>short</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2个字节</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>由字节串转换得到的<c>short</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足2个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt16(System.Byte[],System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串中指定的2个字节转换为一个<c>short</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2个字节</param>
+            <returns>由字节串转换得到的<c>short</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足2个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt16(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以2个字节为一组，转换为<c>short[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是2的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>short[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt16(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串以2个字节为一组，转换为<c>short[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是2的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <returns>转换生成的<c>short[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int16,System.Boolean)">
+            <summary>
+            将short类型转换为长度为2的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int16)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将short类型转换为长度为2的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int16[],System.Boolean)">
+            <summary>
+            将short数组转换为长度为2*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int16[])">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将short数组转换为长度为2*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt16Array(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以2个字节为一组，转换为<c>short[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是2的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>short[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt16Array(System.Byte[],System.Boolean)">
+            <summary>
+            将字节数据串以2个字节为一组，转换为<c>short[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>short[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt32(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串中指定的4个字节转换为一个<c>int</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4个字节</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>由字节串转换得到的<c>int</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足4个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt32(System.Byte[],System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串中指定的4个字节转换为一个<c>int</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4个字节</param>
+            <returns>由字节串转换得到的<c>int</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足4个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt32(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以4个字节为一组，转换为<c>int[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是4的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>int[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt32(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串以4个字节为一组，转换为<c>int[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是4的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <returns>转换生成的<c>int[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int32,System.Boolean)">
+            <summary>
+            将int类型转换为长度为4的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将int类型转换为长度为4的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int32[],System.Boolean)">
+            <summary>
+            将int数组转换为长度为4*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int32[])">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将int数组转换为长度为4*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt32Array(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以4个字节为一组，转换为<c>int[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是4的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>int[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt32Array(System.Byte[],System.Boolean)">
+            <summary>
+            将字节数据串以4个字节为一组，转换为<c>int[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>int[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt64(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串中指定的8个字节转换为一个<c>long</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8个字节</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>由字节串转换得到的<c>long</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足8个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt64(System.Byte[],System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串中指定的8个字节转换为一个<c>long</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8个字节</param>
+            <returns>由字节串转换得到的<c>long</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足8个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt64(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以8个字节为一组，转换为<c>long[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是8的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>long[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt64(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串以8个字节为一组，转换为<c>long[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是8的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <returns>转换生成的<c>long[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int64,System.Boolean)">
+            <summary>
+            将long类型转换为长度为8的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int64)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将long类型转换为长度为8的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int64[],System.Boolean)">
+            <summary>
+            将long数组转换为长度为8*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.Int64[])">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将long数组转换为长度为8*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt64Array(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以8个字节为一组，转换为<c>long[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是8的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>long[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToInt64Array(System.Byte[],System.Boolean)">
+            <summary>
+            将字节数据串以8个字节为一组，转换为<c>long[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>long[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.GetString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            ½«×Ö·ûÊý×é°´Ö¸¶¨±àÂë×ª»»Îª×Ö·û´®¡£
+            </summary>
+            <param name="bytes">×Ö½ÚÊý×é</param>
+            <param name="encoding">±àÂë£¬
+            Èç¹ûÎª<c>null</c>ÔòÊ¹ÓÃ<see cref="P:Settings.Global.ByteArrayEncoding" />´úÌæ</param>
+            <returns>Í¨¹ý×ª»»Éú³ÉµÄ×Ö·û´®</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.GetString(System.Byte[],System.String)">
+            <summary>
+            ½«×Ö½ÚÊý×é°´Ö¸¶¨±àÂë×ª»»Îª×Ö·û´®¡£
+            </summary>
+            <param name="bytes">×Ö½ÚÊý×é</param>
+            <param name="encodingName">±àÂëÃû³Æ£¬Èç¹ûÎª<c>null</c>»ò<c>string.Empty</c>£¬
+            ÔòÊ¹ÓÃ<see cref="P:Settings.Global.ByteArrayEncoding" />±àÂë</param>
+            <returns>Í¨¹ý×ª»»Éú³ÉµÄ×Ö·û´®</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.String,System.Text.Encoding)">
+            <summary>
+            ½«×Ö·û´®°´Ö¸¶¨µÄ±àºÅ×ª»»Îª×Ö½ÚÊý×é¡£
+            </summary>
+            <param name="s">Ô´×Ö·û´®</param>
+            <param name="encoding">Ö¸¶¨×ª»»µÄ±àÂë¸ñÊ½£¬
+            Èç¹û<c>encoding</c>Îªnull£¬ÔòÓÃ<see cref="P:Settings.Global.ByteArrayEncoding" />´úÌæ</param>
+            <returns><c>byte[]</c>±íÊ¾µÄ×ª»»½á¹û</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.String,System.String)">
+            <summary>
+            ½«×Ö·û´®°´Ö¸¶¨µÄ±àºÅ×ª»»Îª×Ö½ÚÊý×é¡£
+            </summary>
+            <param name="s">Ô´×Ö·û´®</param>
+            <param name="encodingName">Ö¸¶¨×ª»»µÄ±àÂë¸ñÊ½£¬
+            Èç¹û<c>encoding</c>Îªnull£¬ÔòÓÃ<see cref="P:Settings.Global.ByteArrayEncoding" />´úÌæ</param>
+            <returns><c>byte[]</c>±íÊ¾µÄ×ª»»½á¹û</returns>
+            <exception cref="T:System.ArgumentException">
+            <see cref="M:System.Text.Encoding.GetEncoding(System.String)"/></exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt16(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串中指定的2个字节转换为一个<c>ushort</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2个字节</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>由字节串转换得到的<c>ushort</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足2个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt16(System.Byte[],System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串中指定的2个字节转换为一个<c>ushort</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2个字节</param>
+            <returns>由字节串转换得到的<c>ushort</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足2个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt16(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以2个字节为一组，转换为<c>ushort[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是2的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>ushort[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt16(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串以2个字节为一组，转换为<c>ushort[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是2的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <returns>转换生成的<c>ushort[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt16,System.Boolean)">
+            <summary>
+            将ushort类型转换为长度为2的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt16)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将ushort类型转换为长度为2的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt16[],System.Boolean)">
+            <summary>
+            将ushort数组转换为长度为2*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt16[])">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将ushort数组转换为长度为2*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt16Array(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以2个字节为一组，转换为<c>ushort[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的2的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是2的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>ushort[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt16Array(System.Byte[],System.Boolean)">
+            <summary>
+            将字节数据串以2个字节为一组，转换为<c>ushort[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>ushort[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，或参与转换的字节数不是0或2的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt32(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串中指定的4个字节转换为一个<c>uint</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4个字节</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>由字节串转换得到的<c>uint</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足4个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt32(System.Byte[],System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串中指定的4个字节转换为一个<c>uint</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4个字节</param>
+            <returns>由字节串转换得到的<c>uint</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足4个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt32(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以4个字节为一组，转换为<c>uint[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是4的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>uint[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt32(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串以4个字节为一组，转换为<c>uint[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是4的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <returns>转换生成的<c>uint[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt32,System.Boolean)">
+            <summary>
+            将uint类型转换为长度为4的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将uint类型转换为长度为4的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt32[],System.Boolean)">
+            <summary>
+            将uint数组转换为长度为4*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt32[])">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将uint数组转换为长度为4*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt32Array(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以4个字节为一组，转换为<c>uint[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的4的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是4的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>uint[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt32Array(System.Byte[],System.Boolean)">
+            <summary>
+            将字节数据串以4个字节为一组，转换为<c>uint[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>uint[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，或参与转换的字节数不是0或4的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt64(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串中指定的8个字节转换为一个<c>ulong</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8个字节</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>由字节串转换得到的<c>ulong</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足8个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt64(System.Byte[],System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串中指定的8个字节转换为一个<c>ulong</c>值。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8个字节</param>
+            <returns>由字节串转换得到的<c>ulong</c>值</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException"><c>bytes</c>从<c>start</c>开始不足8个字节</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt64(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以8个字节为一组，转换为<c>ulong[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是8的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>ulong[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt64(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将字节数据串以8个字节为一组，转换为<c>ulong[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是8的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <returns>转换生成的<c>ulong[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt64,System.Boolean)">
+            <summary>
+            将ulong类型转换为长度为8的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt64)">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将ulong类型转换为长度为8的字节数组
+            </summary>
+            <param name="value">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt64[],System.Boolean)">
+            <summary>
+            将ulong数组转换为长度为8*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToByteArray(System.UInt64[])">
+            <summary>
+            按照 <see cref="P:Settings.Global.IsLittleEndian" /> 指定的默认 Endian 序，
+            将ulong数组转换为长度为8*n的字节数组
+            </summary>
+            <param name="array">源数据</param>
+            <returns>字节数组表示的数据</returns>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt64Array(System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            将字节数据串以8个字节为一组，转换为<c>ulong[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="start">指定从<c>start</c>开始的8的倍数个字节</param>
+            <param name="length">从<c>start</c>开始的<c>length</c>个字节会参与转换。
+            <c>length</c>必须是8的倍数。
+            如果<c>length</c>小于0，则使用从<c>start</c>开始的所有剩余字节。</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>ulong[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，length小于0，
+            或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="M:Viyi.Util.ByteArrayUtil.ToUInt64Array(System.Byte[],System.Boolean)">
+            <summary>
+            将字节数据串以8个字节为一组，转换为<c>ulong[]</c>数据。
+            </summary>
+            <param name="bytes">字节数据串</param>
+            <param name="isLittleEndian">true表示最大有效字节在右端，false表示最大有效字节在左端</param>
+            <returns>转换生成的<c>ulong[]</c>数据</returns>
+            <exception cref="T:System.ArgumentNullException">字节数据为null</exception>
+            <exception cref="T:System.ArgumentException">start小于0，或参与转换的字节数不是0或8的倍数</exception>
+        </member>
+        <member name="T:Viyi.Util.StringUtil">
+            <summary>
+            该类提供将<c>string</c>转换为其它数据类型的若干扩展方法。
+            </summary>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToValue``1(System.String)">
+            <summary>
+            使用<see cref="M:System.Convert.ChangeType(System.Object,System.Type)"/>
+            方法将当前字符串值转换为指定的数据类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="s">源字符串</param>
+            <returns>转换失败返回指定类型的默认值，否则返回转换后的值。</returns>
+            <remarks>相对于指定目的类型的转换来说，该转换效率较低，应尽量避免使用。</remarks>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToValue``1(System.String,``0)">
+            <summary>
+            使用<see cref="M:System.Convert.ChangeType(System.Object,System.Type)"/>
+            方法将当前字符串值转换为指定的数据类型。
+            </summary>
+            <typeparam name="T">目标类型</typeparam>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">转换失败时使用的默认值</param>
+            <returns>转换失败返回传入的默认值，否则返回转换后的值。</returns>
+            <remarks>相对于指定目的类型的转换来说，该转换效率较低，应尽量避免使用。</remarks>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToValue(System.String,System.Type)">
+            <summary>
+            使用<see cref="M:System.Convert.ChangeType(System.Object,System.Type)"/>
+            方法将当前字符串值转换为指定的数据类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="type">目标类型</param>
+            <returns>转换失败返回null，否则返回转换后的值。</returns>
+            <remarks>相对于指定目的类型的转换来说，该转换效率较低，应尽量避免使用。</remarks>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToValue(System.String,System.Type,System.Object)">
+            <summary>
+            使用<see cref="M:System.Convert.ChangeType(System.Object,System.Type)"/>
+            方法将当前字符串值转换为指定的数据类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="type">目标类型</param>
+            <param name="defaultValue">转换失败时使用的默认值</param>
+            <returns>转换失败返回传入的默认值（object类型引用），否则返回转换后的值。</returns>
+            <remarks>相对于指定目的类型的转换来说，该转换效率较低，应尽量避免使用。</remarks>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToBoolean(System.String,System.Boolean)">
+            <summary>
+            将字符串转换为<c>bool</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">转换失败时返回的默认值</param>
+            <returns>转换得来的<c>bool</c>值。若转换失败返回<c>defaultValue</c>。</returns>
+            <remark>如果输入的字符串是<c>"true"</c>或<c>"false"</c>
+            （不区分大小写，可以在前端或后端包含空白字符），
+            则分别得到<c>true</c>或<c>false</c>。其它情况均会造成转换失败。</remark>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToBoolean(System.String)">
+            <summary>
+            将字符串转换为<c>bool</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns>转换得来的<c>bool</c>值。若转换失败返回<c>false</c>。</returns>
+            <remark>如果输入的字符串是<c>"true"</c>或<c>"false"</c>
+            （不区分大小写，可以在前端或后端包含空白字符），
+            则分别得到<c>true</c>或<c>false</c>。其它情况均会造成转换失败。</remark>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToNullableBoolean(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;bool&gt;</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns>转换得来的<c>bool?</c>值。若转换失败返回<c>null</c>。</returns>
+            <remark>如果输入的字符串是<c>"true"</c>或<c>"false"</c>
+            （不区分大小写，可以在前端或后端包含空白字符），
+            则分别得到<c>true</c>或<c>false</c>。其它情况均会造成转换失败。</remark>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String,System.Globalization.DateTimeStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;DateTime&gt;</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述日期/时间的样式</param>
+            <returns>转换得到的<c>DateTime?</c>对象，若转换失败返回<c>null</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String,System.Globalization.DateTimeStyles,System.DateTime)">
+            <summary>
+            将字符串转换为<c>DateTime</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述日期/时间的样式</param>
+            <param name="defaultValue">转换失败时返回的默认值</param>
+            <returns>转换得到的<c>DateTime</c>值，若转换失败返回<c>defaultValue</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String)">
+            <summary>
+            按默认的样式将字符串转换为<c>Nullable&lt;DateTime&gt;</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns>转换得到的<c>DateTime?</c>对象，若转换失败返回<c>null</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String,System.DateTime)">
+            <summary>
+            将字符串转换为<c>DateTime</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">转换失败时返回的默认值</param>
+            <returns>转换得到的<c>DateTime</c>值，若转换失败返回<c>defaultValue</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String,System.Boolean,System.String[])">
+            <summary>
+            按指定的格式将字符串转换为<c>Nullable&lt;DateTime&gt;</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="isEscapeSlash">是否先对斜线(/)字符进行转义</param>
+            <param name="formats">格式。<see cref="M:System.DateTime.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)"/></param>
+            <returns>转换得到的<c>DateTime?</c>对象，若转换失败返回<c>null</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String,System.String[])">
+            <summary>
+            按指定的格式将字符串转换为<c>Nullable&lt;DateTime&gt;</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="formats">格式。<see cref="M:System.DateTime.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)"/></param>
+            <returns>转换得到的<c>DateTime?</c>对象，若转换失败返回<c>null</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDateTime(System.String,System.DateTime,System.String[])">
+            <summary>
+            将字符串转换为<c>DateTime</c>类型。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue"></param>
+            <param name="formats">格式。<see cref="M:System.DateTime.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)"/></param>
+            <returns>转换得到的<c>DateTime</c>值，若转换失败返回<c>defaultValue</c>。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToByte(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;byte&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>byte?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToByte(System.String,System.Globalization.NumberStyles,System.Byte)">
+            <summary>
+            将字符串转换为<c>byte</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>byte</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToByte(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;byte&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>byte?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToByte(System.String,System.Byte)">
+            <summary>
+            将字符串转换为<c>byte</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>byte</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDecimal(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;decimal&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>decimal?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDecimal(System.String,System.Globalization.NumberStyles,System.Decimal)">
+            <summary>
+            将字符串转换为<c>decimal</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>decimal</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDecimal(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;decimal&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>decimal?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDecimal(System.String,System.Decimal)">
+            <summary>
+            将字符串转换为<c>decimal</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>decimal</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDouble(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;double&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>double?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDouble(System.String,System.Globalization.NumberStyles,System.Double)">
+            <summary>
+            将字符串转换为<c>double</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>double</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDouble(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;double&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>double?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToDouble(System.String,System.Double)">
+            <summary>
+            将字符串转换为<c>double</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>double</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToFloat(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;float&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>float?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToFloat(System.String,System.Globalization.NumberStyles,System.Single)">
+            <summary>
+            将字符串转换为<c>float</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>float</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToFloat(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;float&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>float?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToFloat(System.String,System.Single)">
+            <summary>
+            将字符串转换为<c>float</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>float</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt16(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;short&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>short?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt16(System.String,System.Globalization.NumberStyles,System.Int16)">
+            <summary>
+            将字符串转换为<c>short</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>short</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt16(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;short&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>short?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt16(System.String,System.Int16)">
+            <summary>
+            将字符串转换为<c>short</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>short</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt32(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;int&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>int?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt32(System.String,System.Globalization.NumberStyles,System.Int32)">
+            <summary>
+            将字符串转换为<c>int</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>int</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt32(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;int&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>int?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt32(System.String,System.Int32)">
+            <summary>
+            将字符串转换为<c>int</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>int</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt64(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;long&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>long?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt64(System.String,System.Globalization.NumberStyles,System.Int64)">
+            <summary>
+            将字符串转换为<c>long</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>long</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt64(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;long&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>long?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToInt64(System.String,System.Int64)">
+            <summary>
+            将字符串转换为<c>long</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>long</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToSByte(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;sbyte&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>sbyte?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToSByte(System.String,System.Globalization.NumberStyles,System.SByte)">
+            <summary>
+            将字符串转换为<c>sbyte</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>sbyte</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToSByte(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;sbyte&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>sbyte?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToSByte(System.String,System.SByte)">
+            <summary>
+            将字符串转换为<c>sbyte</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>sbyte</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt16(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;ushort&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>ushort?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt16(System.String,System.Globalization.NumberStyles,System.UInt16)">
+            <summary>
+            将字符串转换为<c>ushort</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>ushort</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt16(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;ushort&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>ushort?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt16(System.String,System.UInt16)">
+            <summary>
+            将字符串转换为<c>ushort</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>ushort</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt32(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;uint&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>uint?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt32(System.String,System.Globalization.NumberStyles,System.UInt32)">
+            <summary>
+            将字符串转换为<c>uint</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>uint</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt32(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;uint&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>uint?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt32(System.String,System.UInt32)">
+            <summary>
+            将字符串转换为<c>uint</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>uint</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt64(System.String,System.Globalization.NumberStyles)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;ulong&gt;</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <returns><c>ulong?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt64(System.String,System.Globalization.NumberStyles,System.UInt64)">
+            <summary>
+            将字符串转换为<c>ulong</c>类型的值
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="style">源字符串描述数字的样式</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>ulong</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt64(System.String)">
+            <summary>
+            将字符串转换为<c>Nullable&lt;ulong&gt;</c>类型的值。
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <returns><c>ulong?</c>值。若转换失败返回null。</returns>
+        </member>
+        <member name="M:Viyi.Util.StringUtil.ToUInt64(System.String,System.UInt64)">
+            <summary>
+            将字符串转换为<c>ulong</c>类型的值
+            源字符串会被当作采用十进制描述数值。
+            </summary>
+            <param name="s">源字符串</param>
+            <param name="defaultValue">用转换失败时返回的默认值</param>
+            <returns>转换得来的<c>ulong</c>值。若转换失败返回<c>defaultValue</c></returns>
+        </member>
+    </members>
+</doc>

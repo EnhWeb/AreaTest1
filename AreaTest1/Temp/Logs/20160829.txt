@@ -1,0 +1,77 @@
+http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107275420245641337_1472464426570&_search=false&nd=1472464427468&rows=10&page=1&sidx=Id&sord=desc&_=1472464426571
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+V5.6.4.8 Record On : 2016/8/29 17:53:47 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21107275420245641337_1472464426570&_search=false&nd=1472464427468&rows=10&page=1&sidx=Id&sord=desc&_=1472464426571
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+
+[Exception]:不支持给定路径的格式。:
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21109652438564095338_1472465448527&_search=false&nd=1472465448674&rows=10&page=1&sidx=Id&sord=desc&_=1472465448528
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+V5.6.4.8 Record On : 2016/8/29 18:10:49 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21109652438564095338_1472465448527&_search=false&nd=1472465448674&rows=10&page=1&sidx=Id&sord=desc&_=1472465448528
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+
+[Exception]:不支持给定路径的格式。:
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21102952945465360495_1472465566579&_search=false&nd=1472465566739&rows=10&page=1&sidx=Id&sord=desc&_=1472465566580
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+V5.6.4.8 Record On : 2016/8/29 18:12:47 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21102952945465360495_1472465566579&_search=false&nd=1472465566739&rows=10&page=1&sidx=Id&sord=desc&_=1472465566580
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+
+[Exception]:不支持给定路径的格式。:
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21109232362868453114_1472465987511&_search=false&nd=1472465987873&rows=10&page=1&sidx=Id&sord=desc&_=1472465987512
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+V5.6.4.8 Record On : 2016/8/29 18:19:48 http://localhost:5193/Sample/JqGrid_Test/GetDataForMsSql?callback=jQuery21109232362868453114_1472465987511&_search=false&nd=1472465987873&rows=10&page=1&sidx=Id&sord=desc&_=1472465987512
+Referer:http://localhost:5193/Sample/JqGrid_Test
+------------------------
+
+[Exception]:不支持给定路径的格式。:
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 CYQ.Data.Tool.IOHelper.Save(String fileName, String text, Boolean isAppend, Encoding encode, Boolean writeLogOnError)

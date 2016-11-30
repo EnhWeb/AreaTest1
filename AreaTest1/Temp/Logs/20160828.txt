@@ -1,0 +1,136 @@
+http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:17:40 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> sfdsfdw<br>Para: @UserPassWord-> sdfsdfew<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:51:28 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (asdwerwer)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdwerwer<br>Para: @UserPassWord-> werwer<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (asdwerwer)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:51:34 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdwerwereee<br>Para: @UserPassWord-> werwer<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_PopularizeCode”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (<NULL>)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:51:46 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (asdwerwereee)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdwerwereee<br>Para: @UserPassWord-> werwer<br>Para: @PopularizeCode-> abExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (asdwerwereee)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:53:55 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (asdwerwereeebcdfggadeag)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdwerwereeebcdfggadeag<br>Para: @UserPassWord-> werwer<br>Para: @PopularizeCode-> abccfggadeagExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (asdwerwereeebcdfggadeag)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:53:57 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():不能在具有唯一索引“IX_Table_TY_Member_PopularizeCode”的对象“dbo.Table_TY_Member”中插入重复键的行。重复键值为 (abccfggadeag)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdwerwereesebcdfggadeag<br>Para: @UserPassWord-> werwer<br>Para: @PopularizeCode-> abccfggadeagExeScalar():不能在具有唯一索引“IX_Table_TY_Member_PopularizeCode”的对象“dbo.Table_TY_Member”中插入重复键的行。重复键值为 (abccfggadeag)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 15:54:04 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():不能在具有唯一索引“IX_Table_TY_Member_PopularizeCode”的对象“dbo.Table_TY_Member”中插入重复键的行。重复键值为 (abccfggadeag)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> asdwefrwereesebcdfggadeag<br>Para: @UserPassWord-> werwer<br>Para: @PopularizeCode-> abccfggadeagExeScalar():不能在具有唯一索引“IX_Table_TY_Member_PopularizeCode”的对象“dbo.Table_TY_Member”中插入重复键的行。重复键值为 (abccfggadeag)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:03:03 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (wer)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> wer<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (wer)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:03:40 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (fff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> fff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (fff)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:04:30 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> ff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:04:38 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> ff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:04:53 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> ff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:04:56 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> ff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:05:02 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> ff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+V5.6.4.5 Record On : 2016/8/28 16:05:04 http://localhost:5193/Sample/JqGrid_Test/AddDeleteUpdate?callback=edit_callback
+Referer:http://localhost:5193/Sample/JqGrid_Test/Index
+------------------------
+
+[LogConnIsEmpty]:MsSql Call Function::ExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>MsSql.db.SQL: <br>insert into [Table_TY_Member]([UserName],[UserPassWord],[PopularizeCode]) Values(@UserName,@UserPassWord,@PopularizeCode) select cast(scope_Identity() as int) as OutPutValue<br>Para: @UserName-> ff<br>Para: @UserPassWord-> DBNull.Value<br>Para: @PopularizeCode-> DBNull.ValueExeScalar():违反了 UNIQUE KEY 约束“IX_Table_TY_Member_UserName”。不能在对象“dbo.Table_TY_Member”中插入重复键。重复键值为 (ff)。
+语句已终止。<br>
